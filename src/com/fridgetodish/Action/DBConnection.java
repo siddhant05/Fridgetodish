@@ -62,10 +62,17 @@ import java.sql.SQLException;
 
 
 public class DBConnection{
-	private static String url = "jdbc:mysql://localhost:3306/fridgetodish?autoReconnect=true&useSSL=false";    
-    private static String driverName = "com.mysql.jdbc.Driver";   
+	
+	
+	//private static String url = "jdbc:mysql://localhost:3306/fridgetodish?autoReconnect=true&useSSL=false";
+	private static String url=String.format(
+		    "jdbc:mysql://google/%s?cloudSqlInstance=%s&"
+			        + "socketFactory=com.google.cloud.sql.mysql.SocketFactory",
+			    "fridgetodish",
+			    "quantum-engine-199903:us-central1:fridge-to-dish");
+   // private static String driverName = "com.mysql.jdbc.Driver";   
     private static String username = "root";   
-    private static String password = "Pratima@1706";
+    private static String password = "mysql1234";
     private static Connection con;
 	//public static final Logger logger = Logger.getLogger(DBConnection.class.toString());
    // private static String urlstring;
@@ -73,12 +80,16 @@ public class DBConnection{
     public  Connection getConnection() {
     	
            try {
-			Class.forName(driverName);
-		} catch (ClassNotFoundException e) {
+        	   
+        	 con = DriverManager.getConnection(url, username, password);
+			//Class.forName(driverName);
+		} 
+           
+           catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-            
+          /*  
             try {
                con = DriverManager.getConnection(url, username, password);
             	//con=DriverManager.getConnection(url);
@@ -87,13 +98,15 @@ public class DBConnection{
             } catch (SQLException ex) {
                 // log an exception. fro example:
             	//logger.error("Error Occured While creating connection---->", ex);
-            }
+            }*/
          //catch (ClassNotFoundException ex) {
             // log an exception. for example:
            // System.out.println("Driver not found."); 
         //}
     	return con;
     }
-    
+    public static void main (String [] args){
+    	new DBConnection().getConnection();
+    }
 
 }
