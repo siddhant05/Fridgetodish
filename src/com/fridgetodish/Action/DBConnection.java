@@ -59,7 +59,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import org.apache.log4j.Logger;
+
 
 public class DBConnection{
 	private static String url = "jdbc:mysql://localhost:3306/fridgetodish?autoReconnect=true&useSSL=false";    
@@ -67,7 +67,7 @@ public class DBConnection{
     private static String username = "root";   
     private static String password = "Pratima@1706";
     private static Connection con;
-	public static final Logger logger = Logger.getLogger(DBConnection.class.toString());
+	//public static final Logger logger = Logger.getLogger(DBConnection.class.toString());
    // private static String urlstring;
 
     public  Connection getConnection() {
@@ -82,11 +82,11 @@ public class DBConnection{
             try {
                con = DriverManager.getConnection(url, username, password);
             	//con=DriverManager.getConnection(url);
-               logger.error("Connection Successful");
+               //logger.error("Connection Successful");
             	
             } catch (SQLException ex) {
                 // log an exception. fro example:
-            	logger.error("Error Occured While creating connection---->", ex);
+            	//logger.error("Error Occured While creating connection---->", ex);
             }
          //catch (ClassNotFoundException ex) {
             // log an exception. for example:

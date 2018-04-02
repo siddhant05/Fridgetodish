@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 
 import com.fridgetodish.Action.DBConnection;
 
@@ -24,7 +24,7 @@ public class SignInServlet extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private static final Logger LOGGER = Logger.getLogger(SignInServlet.class);
+	//private static final Logger LOGGER = Logger.getLogger(SignInServlet.class);
 	//private static final long serialVersionUID = 1L;
 
 		protected void doPost(HttpServletRequest request, HttpServletResponse response)  
@@ -72,7 +72,7 @@ public class SignInServlet extends HttpServlet {
 	        	try{
 	        		
 	        	}catch(Exception e1){
-	        		LOGGER.error("Error Occured while closing connection",e1);
+	        		//LOGGER.error("Error Occured while closing connection",e1);
 	        	}
 	        }
 

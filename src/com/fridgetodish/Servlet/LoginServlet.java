@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 
 import com.fridgetodish.Action.DBConnection;
 
@@ -21,7 +21,7 @@ public class LoginServlet extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private static final Logger LOGGER = Logger.getLogger(LoginServlet.class);
+	//private static final Logger LOGGER = Logger.getLogger(LoginServlet.class);
 	//private static final long serialVersionUID = 1L;
 
 		protected void doPost(HttpServletRequest request, HttpServletResponse response)  
@@ -34,12 +34,12 @@ public class LoginServlet extends HttpServlet {
 	        try{
 	        	
 	        }catch(Exception e){
-	        	LOGGER.error("Error Occured while validating user",e);
+	        	//LOGGER.error("Error Occured while validating user",e);
 	        }finally{
 	        	try{
 	        		
 	        	}catch(Exception e1){
-	        		LOGGER.error("Error Occured while closing connection",e1);
+	        		//LOGGER.error("Error Occured while closing connection",e1);
 	        	}
 	        }
 	        
