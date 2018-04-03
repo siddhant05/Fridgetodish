@@ -57,13 +57,9 @@ package com.fridgetodish.Action;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
-import com.google.api.client.auth.oauth2.Credential;
-import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 
 
 
@@ -84,12 +80,14 @@ public class DBConnection{
    // private static String urlstring;
 */    
     public static Connection getConnection() throws URISyntaxException, SQLException {
-        URI url = new URI(System.getenv("mysql://b753ba6a0e03b3:ad297d2c@us-cdbr-iron-east-05.cleardb.net/heroku_6706d4fbc456e71?reconnect=true"));
+       // URI url = new URI(System.getenv("mysql://b753ba6a0e03b3:ad297d2c@us-cdbr-iron-east-05.cleardb.net/heroku_6706d4fbc456e71?reconnect=true"));
 
-        String username = url.getUserInfo().split(":")[0];
-        String password = url.getUserInfo().split(":")[1];
-        String dbUrl = "jdbc:mysql://" + url.getHost() + url.getPath();
-
+       // String username = url.getUserInfo().split(":")[0];
+       // String password = url.getUserInfo().split(":")[1];
+        String username="b753ba6a0e03b3";
+        String password = "ad297d2c";
+       // String dbUrl = "jdbc:mysql://" + url.getHost() + url.getPath();
+        String dbUrl="jdbc:mysql://us-cdbr-iron-east-05.cleardb.net/heroku_6706d4fbc456e71";
         return DriverManager.getConnection(dbUrl, username, password);
     }
 
@@ -125,8 +123,15 @@ public class DBConnection{
         //}
     	return con;
     }
-    public static void main (String [] args){
-    	new DBConnection().getConnection();
-    }
+    
 */
+    
+    /*public static void main (String [] args){
+    	try{
+    		getConnection();
+    	}catch(Exception e){
+    		
+    	}
+    	
+    }*/
 }
