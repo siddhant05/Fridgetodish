@@ -7,7 +7,7 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>FrideToDish</title>
+	<title>FridgeToDish</title>
 	<meta name="description" content="">  
 	<meta name="author" content="">
 
@@ -49,8 +49,8 @@
 					<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
 					<li><a class="smoothscroll"  href="#process" title="">Process</a></li>
 					<li><a class="smoothscroll"  href="#features" title="">Top Recipes</a></li>
-					<li><a class="smoothscroll"  href="#pricing" title="">FAQ</a></li>
-					<li><a class="smoothscroll"  href="#faq" title="">About Us</a></li>	
+					<li><a class="smoothscroll"  href="#pricing" title="">About Us</a></li>
+					<li><a class="smoothscroll"  href="#faq" title="">FAQ</a></li>	
 						
 					<li class="highlight with-sep"><a href="LoginServlet" title="">Sign In/Sign Up</a></li>	
 							
@@ -216,7 +216,7 @@
    			<div class="item" data-item="3">
 
    		<h2>Recipe of the Month</h2>
-		<img class="recipe-pic" src="Images\Recipe_pic.jpeg" alt="Recipe of the Month">
+		<img class="recipe-pic" src="resource\images\Recipe_pic.jpeg" alt="Recipe of the Month">
 		<ul class="recipe-info">
 			<li>Name: Chicken Tikka Masala</li>
 			<li>Cuisine: Indian</li>
@@ -581,29 +581,19 @@
 
    		<div class="row">  
 
-	      	<div class="col-four tab-full mob-full footer-info">            
-
-	            <div class="footer-logo"></div>
-
-	            <p>
-		        	1600 Amphitheatre Parkway<br>
-            	Mountain View, CA 94043 US<br>
-		        	info@lhander.com &nbsp; +123-456-789
-		        	</p>
-
-		      </div> <!-- /footer-info -->
+	      <!-- /footer-info -->
 
 	      	<div class="col-two tab-1-3 mob-1-2 site-links">
 
 	      		<h4>Site Links</h4>
 
 	      		<ul>
-	      			<li><a href="#">About Us</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Terms</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-					</ul>
+	      			<li><a href="LoadDataForHome">Home</a></li>
+						
+						<li><a href="LoadDataForHome#features">Top Recipes</a></li>
+						<li><a href="LoadDataForHome#process">Process</a></li>
+						<li><a href="LoadDataForHome#faq">FAQs</a></li>	
+						</ul>
 
 	      	</div> <!-- /site-links -->  
 
@@ -612,11 +602,11 @@
 	      		<h4>Social</h4>
 
 	      		<ul>
-	      			<li><a href="#">Twitter</a></li>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Dribbble</a></li>
-						<li><a href="#">Google+</a></li>
-						<li><a href="#">Skype</a></li>
+	      			<li><a href="https://www.twitter.com/">Twitter</a></li>
+						<li><a href="https://www.facebook.com/">Facebook</a></li>
+						<li><a href="https://www.facebook.com/">Dribbble</a></li>
+						<li><a href="https://www.google.com/">Google+</a></li>
+						<li><a href="https://www.skype.com/">Skype</a></li>
 					</ul>
 	      	           	
 	      	</div> <!-- /social --> 
@@ -654,8 +644,8 @@
 
       		<div class="col-twelve">
 	      		<div class="copyright">
-		         	<span>© Copyright Lhander 2016.</span> 
-		         	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>		         	
+		         	<span>Copyright@fridgetodish.com</span> 
+		         	<span>Design by <a href="#">Team 26</a></span>		         	
 		         </div>
 
 		         <div id="go-top" style="display: block;">

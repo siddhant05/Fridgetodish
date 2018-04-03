@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -16,6 +17,7 @@ import javax.servlet.http.HttpSession;
 //import org.apache.log4j.Logger;
 
 import com.fridgetodish.Action.DBConnection;
+import com.fridgetodish.Pojo.User;
 
  
 @WebServlet(value="/SignInServlet")
@@ -37,10 +39,11 @@ public class SignInServlet extends HttpServlet {
 					Connection lConn					=null;
 					ResultSet lRst						=null;
 					boolean lSigninFlag					=false;
-					String lFirstName					=null;
+					//String lFirstName					=null;
+					User lUser 				  			=new User();
 					try{
 						lConn= new DBConnection().getConnection();
-						StringBuilder lBuilder = new StringBuilder("select first_name from users where user_name=? and password=?");
+						StringBuilder lBuilder = new StringBuilder("select user_name,first_name,last_name,email from users where user_name=? and password=?");
 						
 						lPstmt	= lConn.prepareStatement(lBuilder.toString());			 
 						lPstmt.setString(1, lUserName);
@@ -48,13 +51,18 @@ public class SignInServlet extends HttpServlet {
 						lRst=lPstmt.executeQuery();
 						while(lRst.next()){
 							lSigninFlag=true;
-							lFirstName=lRst.getString(1);
+							lUser.setUsername(lRst.getString(1));
+							lUser.setEmail(lRst.getString(4));
+							lUser.setFirst_name(lRst.getString(2));
+							lUser.setLast_name(lRst.getString(3));
 						}
 						
 						if(lSigninFlag){
 							HttpSession session=request.getSession();  
-		        			session.setAttribute("name",lFirstName);
-		        			RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/success.jsp");
+	        				session.setAttribute("user", lUser);
+		        			//session.setAttribute("name",lFirstName);
+		        			
+		        			RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/UserProfile.jsp");
 		        		    rd.forward(request, response);
 		        			
 							
@@ -87,6 +95,43 @@ public class SignInServlet extends HttpServlet {
 			
 		}
 		
-		
+		public User fetchUserDetails(String pEmail,Connection pConnection){
+			
+			PreparedStatement lPstmnt = null;
+			ResultSet lRst			  = null;
+			User lUser 				  = new User();
+			
+			try{
+				StringBuilder lBuilder = new StringBuilder("select a.user_name,a.first_name,a.last_name,a.email from users a where a.email=? ");
+										 lBuilder.append(" and a.rowstate!=-1");
+				
+				lPstmnt = pConnection.prepareStatement(lBuilder.toString());
+				lPstmnt.setString(1, pEmail);
+				lRst=lPstmnt.executeQuery();
+				
+				while(lRst.next()){
+					lUser.setUsername(lRst.getString(1));
+					lUser.setEmail(lRst.getString(4));
+					lUser.setFirst_name(lRst.getString(2));
+					lUser.setLast_name(lRst.getString(3));
+					
+					
+				}
+				
+				
+			}catch(Exception e){
+				//LOGGER.error("Error Occured while fetching user details", e);
+			}
+			finally 
+			{
+				try {
+					pConnection.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			return lUser;
+		}
 	}  
 
