@@ -123,10 +123,10 @@ body {
 
 	   	<nav id="main-nav-wrap">
 				<ul class="main-navigation">
-					<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-					
+					<li class="highlight with-sep"><a href="LoadDataForHome" title="">Home</a></li>
+					<li><a class="smoothscroll"  href="#process" title="">Profile</a></li>
 					<li><a class=""  href="LogoutServlet" title="">Logout</a></li>									
-					<li><a class="smoothscroll"  href="#process" title="">Profile</a></li>				
+									
 				</ul>
 			</nav>
 
@@ -175,14 +175,14 @@ body {
 </div>
 
 <div id="My Bookmarks" class="tabcontent">
-  <h3>My Bookmarks</h3><p>Your bookmarked recipes would be displayed here.</p> 
+  <h3>My Bookmarks</h3><p>Hey.You haven't added any bookmarks yet. Hurry up!</p> 
 </div>
 <div id="My Favorites" class="tabcontent">
-  <h3>My Favorites</h3><p>Your favorite recipes would be displayed here.</p> 
+  <h3>My Favorites</h3><p>Hey. You have no favorites?</p> 
 </div>
 
 <div id="My Uploaded Dishes" class="tabcontent">
-  <h3>My Uploaded Dishes</h3><p>Your uploaded recipes would be displayed here.</p>
+  <h3>My Uploaded Dishes</h3><p>Get into uploading your own recipes and win exciting prizes.</p>
 </div>
 
 <script>
