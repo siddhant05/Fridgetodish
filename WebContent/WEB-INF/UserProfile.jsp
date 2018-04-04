@@ -3,6 +3,7 @@
 <%@taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c'%>
 <%@ page import="com.fridgetodish.Pojo.*"%>
 
+
 <!DOCTYPE html>
 <!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
 <!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
@@ -264,7 +265,7 @@ document.getElementById("defaultOpen").click();
 
 	      		<div class="subscribe-form">
 	      	
-	      			<form id="mc-form" class="group" novalidate= "true">
+	      			<form id="mc-form" class="group" novalidate="true">
 
 							<input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="type email &amp; hit enter" required=""> 
 	   		
