@@ -21,10 +21,10 @@
    ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
- 	<!-- CSS
+ 	<!-- CSS links
    ================================================== -->
-   <link rel="stylesheet" href="css/base.css">  
-   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="resource/css/base.css">  
+   <link rel="stylesheet" href="resource/css/main.css">
 	<style>
 html {
 	font-size: 10px;
