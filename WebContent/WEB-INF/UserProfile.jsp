@@ -22,34 +22,61 @@
 
  	<!-- CSS
    ================================================== -->
-   <link rel="stylesheet" href="resource/css/base.css">  
-   <link rel="stylesheet" href="resource/css/main.css">
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
 	<style>
-* {box-sizing: border-box, margin: auto, color: red}
-body {font-family: "Lato", sans-serif;}
-	/* Style the tab */
+html {
+	font-size: 10px;
+}
+@media only screen and (max-width:1024px) {
+	html {
+		font-size: 9.375px;
+	}
+}
+@media only screen and (max-width:768px) {
+	html {
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width:400px) {
+	html {
+		font-size: 9.375px;
+	}
+}
+
+html, body {
+	height: 100%;
+}
+body {
+	background: #14181E;
+	font-family: "merriweather-regular", serif;
+	font-size: 1.6rem;
+	line-height: 3rem;
+	color: #737373;
+}
+
+/**
+ * links 
+ * -
+ */
+
+
+/* Style the tab */
 .tab {
-    float: left;
-    border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: 15%;
-    height: 200px;
+	display: flex;
+	justify-content: center;
+	
+	
 
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 0px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
+    display: inline;
+	align: center;
+	
+
 }
 
 /* Change background color of buttons on hover */
@@ -64,12 +91,19 @@ body {font-family: "Lato", sans-serif;}
 
 /* Style the tab content */
 .tabcontent {
-    float: left;
-    padding: 10px 12px;
-    border: 1px solid #ccc;
-    width: 75%;
-    border-left: none;
-    height: 200px;
+    margin-left: 250px;
+	}
+    
+#intro1 {
+	background: #14181E url(images/recipe1.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 70%;
+	
+	display: table;
+	position: relative;
 }
 </style>
 </head>
@@ -83,15 +117,17 @@ body {font-family: "Lato", sans-serif;}
    	<div class="row">
 
    		<div class="logo">
-	         <a href="LoadDataForHome"></a>
+	         <a href="index.html"></a>
 	      </div>
-<!-- highlight with-sep -->
+
 	   	<nav id="main-nav-wrap">
-	   	
 				<ul class="main-navigation">
-					<li ><a class=""  href="LoadDataForHome" title="">Home</a></li>
-					<li class="current"><a class=""  href="#process" title="">My Profile</a></li>
-					<li><a class=""  href="LogoutServlet" title="">Logout</a></li>					
+					<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+					<li><a class="smoothscroll"  href="#process" title="">Process</a></li>
+					<li><a class="smoothscroll"  href="#features" title="">Top Recipes</a></li>
+					<li><a class="smoothscroll"  href="#pricing" title="">FAQ</a></li>
+					<li><a class="smoothscroll"  href="#faq" title="">About Us</a></li>					
+					<li class="highlight with-sep"><a href="#" title="">Sign In/Sign Up</a></li>					
 				</ul>
 			</nav>
 
@@ -105,24 +141,21 @@ body {font-family: "Lato", sans-serif;}
 
    <!-- Process Section
    ================================================== -->
-   <section id="process">  
-
-   	<div class="row section-intro">
-   		<div class="col-twelve with-bottom-line">
-
-   			<h3>My Information</h3>
-
-   		</div>   		
-   	</div>
-
-<div class="tab" style="height:250px;margin-left:10px">
+<section id="intro1">
+</section>
+<section id="process">
+<div id="info"> 
+<p style="font-size:1.5em; text-align:center; margin-top: -50px">My Profile</p>
+</div>
+<div class="tab" style="margin-bottom:10px;">
   <button class="tablinks" onclick="openCity(event, 'About Me')" id="defaultOpen">About Me</button>
   <button class="tablinks" onclick="openCity(event, 'My Bookmarks')">My Bookmarks</button>
+  <button class="tablinks" onclick="openCity(event, 'My Favorites')">My Favorites</button>
   <button class="tablinks" onclick="openCity(event, 'My Uploaded Dishes')">My Uploaded Dishes</button>
 </div>
 
-<div id="About Me" class="tabcontent" style="height:250px">
-  <h3>About Me</h3>
+<div id="About Me" class="tabcontent" style="left-margin: 100px">
+  <h3>My Details</h3>
   <table class="table table-user-information">
 									<tbody>
 										<tr>
@@ -142,12 +175,15 @@ body {font-family: "Lato", sans-serif;}
 								</table>
 </div>
 
-<div id="My Bookmarks" class="tabcontent" style="height:250px">
-  <h3>My Bookmarks</h3><p>xxx</p> 
+<div id="My Bookmarks" class="tabcontent">
+  <h3>My Bookmarks</h3><p>Your bookmarked recipes would be displayed here.</p> 
+</div>
+<div id="My Favorites" class="tabcontent">
+  <h3>My Favorites</h3><p>Your favorite recipes would be displayed here.</p> 
 </div>
 
-<div id="My Uploaded Dishes" class="tabcontent" style="height:250px">
-  <h3>My Uploaded Dishes</h3><p>xxx</p>
+<div id="My Uploaded Dishes" class="tabcontent">
+  <h3>My Uploaded Dishes</h3><p>Your uploaded recipes would be displayed here.</p>
 </div>
 
 <script>
@@ -173,7 +209,7 @@ document.getElementById("defaultOpen").click();
 
 
 
-   <!-- footer
+    <!-- footer
    ================================================== -->
    <footer>
 
@@ -228,7 +264,7 @@ document.getElementById("defaultOpen").click();
 
 	      		<div class="subscribe-form">
 	      	
-	      			<form id="mc-form" class="group" novalidate="true">
+	      			<form id="mc-form" class="group" novalidate= "true">
 
 							<input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="type email &amp; hit enter" required=""> 
 	   		
