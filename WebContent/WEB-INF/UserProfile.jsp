@@ -124,9 +124,9 @@ body {
 	   	<nav id="main-nav-wrap">
 				<ul class="main-navigation">
 					<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-					<li><a class="smoothscroll"  href="#process" title="">Profile</a></li>
+					
 					<li><a class=""  href="LogoutServlet" title="">Logout</a></li>									
-					<li class="highlight with-sep"><a href="#" title="">Sign In/Sign Up</a></li>					
+					<li><a class="smoothscroll"  href="#process" title="">Profile</a></li>				
 				</ul>
 			</nav>
 
