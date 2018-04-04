@@ -546,7 +546,7 @@
 
    		<div class="col-twelve">
 
-   			<h1 class="h01">Get started now. Try Lhander free for 30 days.</h1>
+   			<h1 class="h01">Get started now. Try fridgetodish</h1>
 
    			<p class="lead">Download the app now. Available on the:</p>
 
