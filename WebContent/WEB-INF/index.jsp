@@ -26,8 +26,8 @@
 	<script src="js/modernizr.js"></script>
 
    <!-- favicons
-	================================================== -->
-	<link rel="icon" type="image/png" href="resource/favicon.png">
+	================================================== 	  
+	<link rel="icon" type="image/png" href="resource/favicon.png">	  -->
 
 </head>
 
@@ -49,7 +49,7 @@
 					<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
 					<li><a class="smoothscroll"  href="#process" title="">Process</a></li>
 					<li><a class="smoothscroll"  href="#features" title="">Top Recipes</a></li>
-					<li><a class="smoothscroll"  href="#pricing" title="">About Us</a></li>
+				<!--	<li><a class="smoothscroll"  href="#pricing" title="">About Us</a></li> -->
 					<li><a class="smoothscroll"  href="#faq" title="">FAQ</a></li>	
 						
 					<li class="highlight with-sep"><a href="LoginServlet" title="">Sign In/Sign Up</a></li>	
@@ -79,7 +79,7 @@
 	   			<a href="#video-popup"><img src="#" alt=""></a>
 	   			</div>
 
-	   			<h5>Welcome to fridge2dish.com!!</h5>
+	   			<h5>Welcome to fridgetodish.com!</h5>
 	   			<h1>We are here to make your cooking experience lot more fun!</h1>
 
 	   			<a class="button stroke smoothscroll" href="#process" title="">Learn More</a>
@@ -92,15 +92,15 @@
    	<!-- Modal Popup
 	   ========================================================= -->
 
-      <div id="video-popup" class="popup-modal mfp-hide">
+     <!-- <div id="video-popup" class="popup-modal mfp-hide">
 
 		   <div class="fluid-video-wrapper">
             <iframe src="http://player.vimeo.com/video/14592941?title=0&amp;byline=0&amp;portrait=0&amp;color=faec09" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-         </div>		     
+         </div>	   
 
          <a class="close-popup">Close</a>         
 
-	   </div> <!-- /video-popup -->  	 	
+	   </div> <!-- /video-popup -->  	-->	   	
 
    </section> <!-- /intro -->
 
@@ -114,7 +114,7 @@
    			<h5>Process</h5>
    			<h1>How it works?</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			<p class="lead">Our website has been designed to be as user-friendly as possible and will get you on the way to delicious meals in four simple steps.</p>
 
    		</div>   		
    	</div>
@@ -127,15 +127,15 @@
 
    				<h5>Sign Up</h5>
 
-   				<p>Lorem ipsum Cupidatat nostrud non cupidatat ut dolor id eiusmod non minim aute consectetur incididunt tempor irure aute consequat quis voluptate.</p>
+   				<p>First time users can register using the link provided at the top of the page. It's 100% free!</p>
    					
    			</div>
 
    			<div class="item" data-item="2">
 
-	   			<h5>Upload</h5>
+	   			<h5>Select Ingredients</h5>
 
-	   			<p>Lorem ipsum Cupidatat nostrud non cupidatat ut dolor id eiusmod non minim aute consectetur incididunt tempor irure aute consequat quis voluptate.</p>
+	   			<p>After logging in with your credentials, you may then choose the ingredients that you wish to use. You also have the option of browsing through our selection of thousands of recipes based on cuisine or the top recipes of the month.</p>
    					
    			</div>
    				
@@ -145,17 +145,17 @@
    				
    			<div class="item" data-item="3">
 
-   				<h5>Create</h5>
+   				<h5>Browse & Start Cooking</h5>
 
-   				<p>Lorem ipsum Cupidatat nostrud non cupidatat ut dolor id eiusmod non minim aute consectetur incididunt tempor irure aute consequat quis voluptate.</p>
+   				<p>Using the ingredients selected, our inhouse Chef Andy will then whip up some mouth watering recipes that you can use to prepare a sumptuous meal. Each recipe will have written instructions as well as a video tutorial.</p>
    					
    			</div>
 
    			<div class="item" data-item="4">
 
-   				<h5>Publish</h5>
+   				<h5>Upload Recipes</h5>
 
-   				<p>Lorem ipsum Cupidatat nostrud non cupidatat ut dolor id eiusmod non minim aute consectetur incididunt tempor irure aute consequat quis voluptate.</p>
+   				<p>Users also have the option of uploading their favorite recipes. Our panel of experts will evaluate your recipe and selected recipes will be uploaded here for everyone to use. At the end of each month, the owner of the recipe with the highest rating will win a $100 gift card for Farm Patch. Yes it's that easy!</p>
    					
    			</div>
 
@@ -242,7 +242,7 @@
 	
 
 	<!-- pricing
-   ================================================== -->
+   ================================================== 
 
    <section id="pricing">
 
@@ -289,7 +289,7 @@
 
             	</div>           	
                         
-			   </div> <!-- /price-block -->
+			   </div> <!-- /price-block 
 
             <div class="bgrid">
 
@@ -319,7 +319,7 @@
             		
             	</div>            	                 
 
-			  </div> <!-- /price-block -->
+			  </div> <!-- /price-block 
 
            <div class="bgrid">               
 
@@ -349,7 +349,7 @@
             		
             	</div>                              
 
-			   </div> <!-- /price-block --> 
+			   </div> <!-- /price-block 
 
 			   <div class="bgrid">               
 
@@ -379,17 +379,17 @@
             		
             	</div>                              
 
-			   </div> <!-- /price-block -->           
+			   </div> <!-- /price-block          
 
-         </div> <!-- /pricing-tables --> 
+         </div> <!-- /pricing-tables  
 
-      </div> <!-- /pricing-content --> 
+      </div> <!-- /pricing-content  
 
    </section> <!-- /pricing --> 
 
 
    <!-- Testimonials Section
-   ================================================== -->
+   ================================================== 
    <section id="testimonials">
 
    	<div class="row">
@@ -406,7 +406,7 @@
 
                <li>
                	<div class="testimonial-author">
-                    	<img src="resource\images\avatars\avatar-1.jpg" alt="Author image">
+                    	<img src="images/avatars/avatar-1.jpg" alt="Author image">
                     	<div class="author-info">
                     		Rachel Green
                     		<span class="position">Merchandising Manager, Ralph Lauren.</span>
@@ -416,12 +416,12 @@
                   <p>
                   I have always struggled to find the perfect recipes that requires just the ingredients that I have. Your website has made my cooking so much easier and practical. I love the fact that your website is easy to use and has such simple step-by-step recipes.   						
                   </p>                  
-             	</li> <!-- /slide -->
+             	</li> <!-- /slide 
 
                <li> 
 
                	<div class="testimonial-author">
-                    	<img src="resource\images\avatars\avatar-2.jpg" alt="Author image">
+                    	<img src="images/avatars/avatar-2.jpg" alt="Author image">
                     	<div class="author-info">
                     		Clay Jensen
                     		<span>Student, NYU</span>
@@ -432,13 +432,13 @@
                   I .    
                   </p>
                                          
-               </li> <!-- /slide -->
+               </li> <!-- /slide 
 
-            </ul> <!-- /slides -->
+            </ul> <!-- /slides 
 
-         </div> <!-- /testimonial-slider -->         
+         </div> <!-- /testimonial-slider         
         
-      </div> <!-- /flex-container -->
+      </div> <!-- /flex-container 
 
    </section> <!-- /testimonials -->
 
@@ -450,7 +450,7 @@
    	<div class="row section-intro">
    		<div class="col-twelve with-bottom-line">
 
-   			<h5>Faq</h5>
+   			<h5>FAQs</h5>
    			<h1>Questions and Answers.</h1>
 
    		</div>   		
@@ -511,7 +511,7 @@
    		
    	</div> <!-- /faq-content --> 
 
-   	<div class="row section-ads">
+   <!--	<div class="row section-ads">
 
 		   <div class="col-twelve">	
 
@@ -522,7 +522,7 @@
 			      <p class="lead">
 			      Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
 					Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. 
-					<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->					
+					<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. 				
 					</p>
 
 					<div class="action">
@@ -533,20 +533,20 @@
 
 			</div>
 
-		</div> <!-- /section-ads --> 
+		</div> <!-- /section-ads 
 
 
    </section> <!-- /faq --> 
 
    <!-- cta
-   ================================================== -->
+   ================================================== 
    <section id="cta">
 
    	<div class="row cta-content">
 
    		<div class="col-twelve">
 
-   			<h1 class="h01">Get started now. Try fridgetodish</h1>
+   			<h1 class="h01">Get started now. Try Lhander free for 30 days.</h1>
 
    			<p class="lead">Download the app now. Available on the:</p>
 
@@ -568,7 +568,7 @@
 
    		</div>
 
-   	</div> <!-- /cta-content -->
+   	</div> <!-- /cta-content 
 
    </section> <!-- /cta -->
 
