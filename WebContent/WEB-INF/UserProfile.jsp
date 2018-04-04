@@ -96,7 +96,7 @@ body {
 	}
     
 #intro1 {
-	background: #14181E url(images/recipe1.jpg) no-repeat center;
+	background: #14181E url(resource/images/recipe1.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -124,10 +124,8 @@ body {
 	   	<nav id="main-nav-wrap">
 				<ul class="main-navigation">
 					<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-					<li><a class="smoothscroll"  href="#process" title="">Process</a></li>
-					<li><a class="smoothscroll"  href="#features" title="">Top Recipes</a></li>
-					<li><a class="smoothscroll"  href="#pricing" title="">FAQ</a></li>
-					<li><a class="smoothscroll"  href="#faq" title="">About Us</a></li>					
+					<li><a class="smoothscroll"  href="#process" title="">Profile</a></li>
+					<li><a class=""  href="LogoutServlet" title="">Logout</a></li>									
 					<li class="highlight with-sep"><a href="#" title="">Sign In/Sign Up</a></li>					
 				</ul>
 			</nav>
