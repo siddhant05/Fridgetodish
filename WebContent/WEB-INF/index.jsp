@@ -406,7 +406,7 @@
 
                <li>
                	<div class="testimonial-author">
-                    	<img src="resources/images/avatars/avatar-1.jpg" alt="Author image">
+                    	<img src="resources\images\avatars\avatar-1.jpg" alt="Author image">
                     	<div class="author-info">
                     		Rachel Green
                     		<span class="position">Merchandising Manager, Ralph Lauren.</span>
@@ -421,7 +421,7 @@
                <li> 
 
                	<div class="testimonial-author">
-                    	<img src="resources/images/avatars/avatar-2.jpg" alt="Author image">
+                    	<img src="resources\images\avatars\avatar-2.jpg" alt="Author image">
                     	<div class="author-info">
                     		Clay Jensen
                     		<span>Student, NYU</span>
