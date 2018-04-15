@@ -62,7 +62,7 @@ public class SignInServlet extends HttpServlet {
 	        				session.setAttribute("user", lUser);
 		        			//session.setAttribute("name",lFirstName);
 		        			
-		        			RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/UserProfile.jsp");
+		        			RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/analysisPage.jsp");
 		        		    rd.forward(request, response);
 		        			
 							
