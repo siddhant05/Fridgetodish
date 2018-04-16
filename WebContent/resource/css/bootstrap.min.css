@@ -5981,6 +5981,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:focus,
 
 .panel-heading {
 	padding: 10px 15px;
+	margin-top:20px
 	border-bottom: 1px solid transparent;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px
@@ -6251,7 +6252,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:focus,
 
 .panel-primary>.panel-heading {
 	color: #fff;
-	background-color: #337ab7;
+	background-color: #c30b06;
 	border-color: #337ab7
 }
 
