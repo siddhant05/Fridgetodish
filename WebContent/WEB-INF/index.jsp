@@ -389,7 +389,7 @@
 
 
    <!-- Testimonials Section
-   ================================================== 
+   ==================================================>> 
    <section id="testimonials">
 
    	<div class="row">
@@ -432,13 +432,13 @@
                   I .    
                   </p>
                                          
-               </li> <!-- /slide 
+               </li> <!-- /slide -->>
 
-            </ul> <!-- /slides 
+            </ul> <!-- /slides-- >>
 
-         </div> <!-- /testimonial-slider         
+         </div> <!-- /testimonial-slider -->>      
         
-      </div> <!-- /flex-container 
+      </div> <!-- /flex-container -->>
 
    </section> <!-- /testimonials -->
 
@@ -662,6 +662,32 @@
    <div id="preloader"> 
     	<div id="loader"></div>
    </div> 
+
+	function ajaxforRecipeLoad(){
+
+
+    	var lRecipeID = jQuery("#recipe").val();
+
+    	jQuery("#profile-pills").html("");
+    	$
+    			.ajax({
+    				type : "GET",
+    				url : "RecipeInfoServlet",
+    				contentType : "application/x-www-form-urlencoded; charset=UTF-8",
+    				data : {
+    					'lRC' : lRecipeID
+    				},
+    				success : function(responseText) {
+
+    					var lData = responseText.getElementsByTagName("recipe");
+    				
+    						$("#profile-pills").html("<br>"+lData);
+    						
+    				}
+
+    			});
+
+    }
 
    <!-- Java Script
    ================================================== --> 

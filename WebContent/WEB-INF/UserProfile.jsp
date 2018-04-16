@@ -176,6 +176,9 @@ body {
 
 <div id="My Bookmarks" class="tabcontent">
   <h3>My Bookmarks</h3><p>Hey.You haven't added any bookmarks yet. Hurry up!</p> 
+  <form action="FindRecipeServlet" method="get">
+   <a href="FindRecipeServlet"> Find Recipes</a>
+  </form>
 </div>
 <div id="My Favorites" class="tabcontent">
   <h3>My Favorites</h3><p>Hey. You have no favorites?</p> 
