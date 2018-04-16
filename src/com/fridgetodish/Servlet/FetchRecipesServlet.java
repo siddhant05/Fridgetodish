@@ -37,21 +37,25 @@ public class FetchRecipesServlet extends HttpServlet {
 			ResultSet lRst   							   = null;
 			try{
 				lConn=new DBConnection().getConnection();				
-				String[] lSelectedIngredients=request.getParameter("protien").split(",");
+				String[] lSelectedIngredients=request.getParameterValues("protien");
+				
 				StringBuilder lSearchQuery=  new StringBuilder("select b.recipe_id,b.recipe_name from recipes_ingredients_link a join recipes b on a.recipe_id=b.recipe_id");
-											 lSearchQuery.append(" join ingredients c on c.ingredient_id=a.ingredient_id where a.ingredient_id in (?)");
-											 
-					lPstmt=lConn.prepareStatement(lSearchQuery.toString());
-					String lIntegerIDs="";
+											 lSearchQuery.append(" join ingredients c on c.ingredient_id=a.ingredient_id where a.ingredient_id in (xxx)");
+				
+					String lQs="";
 					for(int i=0;i<lSelectedIngredients.length;i++){
 						if(i==0){
-							lIntegerIDs= Integer.parseInt(lSelectedIngredients[0])+"";
-									
+							lQs="?";
 						}else{
-							lIntegerIDs=lIntegerIDs+","+Integer.parseInt(lSelectedIngredients[0]);
+							lQs=lQs+","+"?";
 						}
 					}
-					lPstmt.setString(1, lIntegerIDs);	
+					String lQueryFinal=	lSearchQuery.toString().replaceAll("xxx", lQs);	 
+					lPstmt=lConn.prepareStatement(lQueryFinal);
+					for(int j=0;j<lSelectedIngredients.length;j++){
+						lPstmt.setInt(1+j, Integer.parseInt(lSelectedIngredients[j]));
+					}
+					
 					lRst=lPstmt.executeQuery();
 					while(lRst.next()){
 						lRecipeMap.put(lRst.getInt(1), lRst.getString(2));

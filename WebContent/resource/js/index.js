@@ -138,7 +138,7 @@ $('.tab a,.links a').on('click', function (e) {
 	function ajaxforRecipeLoad(){
 
 
-    	var lRecipeID = jQuery("#recipe").val();
+		var lRecipeID = $('input[name=recipe]:checked').val();
 
     	jQuery("#profile-pills").html("");
     	$

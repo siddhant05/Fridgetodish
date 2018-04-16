@@ -135,7 +135,7 @@
 															</thead>
 															<c:forEach var="item" items="${protien}">
 																<tr class="ingredients">
-																	<td><input type="checkbox" name="protien" id="protien"
+																	<td><input type="checkbox" name="protien" id=<c:out value="${item.key}"/>
 																		value=<c:out value="${item.key}"/>> &nbsp;<label><c:out
 																				value="${item.value}" /></label></td>
 																</tr>
@@ -190,7 +190,7 @@
 															</thead>
 															<c:forEach var="item" items="${recipes}">
 																<tr class="danger">
-																	<td><input type="radio" name="recipe" id="recipe"
+																	<td><input type="radio" name="recipe" id=<c:out value="${item.key}"/>
 																		value=<c:out value="${item.key}"/>> &nbsp;<label><c:out
 																				value="${item.value}" /></label></td>
 																</tr>
