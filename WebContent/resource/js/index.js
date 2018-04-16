@@ -133,4 +133,30 @@ $('.tab a,.links a').on('click', function (e) {
         window.location.hash = target;
       });
 
-    }); 
+    });
+    
+	function ajaxforRecipeLoad(){
+
+
+    	var lRecipeID = jQuery("#recipe").val();
+
+    	jQuery("#profile-pills").html("");
+    	$
+    			.ajax({
+    				type : "GET",
+    				url : "RecipeInfoServlet",
+    				contentType : "application/x-www-form-urlencoded; charset=UTF-8",
+    				data : {
+    					'lRC' : lRecipeID
+    				},
+    				success : function(responseText) {
+
+    					var lData = responseText.getElementsByTagName("recipe");
+    				
+    						$("#profile-pills").html(lData);
+    						
+    				}
+
+    			});
+
+    }

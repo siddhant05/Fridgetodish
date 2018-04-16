@@ -663,31 +663,7 @@
     	<div id="loader"></div>
    </div> 
 
-	function ajaxforRecipeLoad(){
 
-
-    	var lRecipeID = jQuery("#recipe").val();
-
-    	jQuery("#profile-pills").html("");
-    	$
-    			.ajax({
-    				type : "GET",
-    				url : "RecipeInfoServlet",
-    				contentType : "application/x-www-form-urlencoded; charset=UTF-8",
-    				data : {
-    					'lRC' : lRecipeID
-    				},
-    				success : function(responseText) {
-
-    					var lData = responseText.getElementsByTagName("recipe");
-    				
-    						$("#profile-pills").html("<br>"+lData);
-    						
-    				}
-
-    			});
-
-    }
 
    <!-- Java Script
    ================================================== --> 
