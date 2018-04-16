@@ -108,7 +108,7 @@
 	<div id="wrapper">
 		
 					<div class="row">
-						<div class="col-lg-4">
+						<div class="col-lg-4" style="margin-top:120px">
 							<div class="panel panel-primary">
 								<div class="panel-heading">Welcome to Ingredient Selection Wizard</div>
 								<!-- .panel-heading -->
@@ -160,7 +160,7 @@
 						
 						</div>
 						
-						<div class="col-lg-8">
+						<div class="col-lg-8" style="margin-top:120px" >
 
 
 							<div class="panel panel-primary">
