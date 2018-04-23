@@ -148,12 +148,12 @@ $('.tab a,.links a').on('click', function (e) {
 
     	
   
-    	var lIngredientID = $('[name="Ingredients"]').val();
+    	var lIngredientID = jQuery('[name="Ingredients"]').val();
 		var lCombinedHTML="";
 		var lPaginationCount="";
 		alert(lIngredientID);
     	jQuery("#recipelist").html("");
-    	$
+    	jQuery
     			.ajax({
     				type : "GET",
     				url : "FetchRecipesServlet",
@@ -208,7 +208,7 @@ $('.tab a,.links a').on('click', function (e) {
     					}
     	            	
     	            	
-    						$("#recipelist").html(lCombinedHTML);
+    						jQuery("#recipelist").html(lCombinedHTML);
     						
     				}
 
