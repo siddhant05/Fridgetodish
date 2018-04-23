@@ -44,7 +44,7 @@ public class SavereviewServlet extends HttpServlet {
 			StringBuilder lXMLBuilder				= new StringBuilder();
 			try{
 				lConn= new DBConnection().getConnection();
-				StringBuilder lBuilder = new StringBuilder("insert into reviews (user_id,recipe_id,post_time,comments) values ");
+				StringBuilder lBuilder = new StringBuilder("insert into reviews (user_id,recipe_id,post_time,review) values ");
 										 lBuilder.append("(?,?,?,?)");
 				
 				lPstmt	= lConn.prepareStatement(lBuilder.toString());			 
