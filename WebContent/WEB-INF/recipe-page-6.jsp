@@ -230,7 +230,20 @@
 
 		<div class="margin-top-15"></div>
 
+<h3 class="headline"><a href="#reviews" data-toggle="collapse">Reviews</a> <span class="comments-amount"></span></h3><span class="line"></span><div class="clearfix"></div>
+		
+			<!-- Reviews -->
+			<section class="comments collapse" id="reviews">
 
+				<ul id="commentlist">
+					
+
+					
+
+					
+				 </ul>
+
+			</section>
 		<!-- Comments
 		================================================== -->
 		
