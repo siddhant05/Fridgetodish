@@ -839,7 +839,7 @@ header .logo a {
 	color: transparent;
 	width: 250px;
 	height: 100px;
-	background: url("../images/logo7.png") no-repeat center;
+	background: url("resource/images/logo7.png") no-repeat center;
 	background-size: 100px 100px;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
@@ -2286,7 +2286,7 @@ footer ul li {
 .footer-main .footer-logo {
 	width: 162px;
 	height: 39px;
-	background: url("../images/footer-logo.png") no-repeat center;
+	background: url("resources/images/footer-logo.png") no-repeat center;
 	background-size: 162px 39px;
 	margin: -.6rem 0 2.1rem -.3rem;
 	display: block;

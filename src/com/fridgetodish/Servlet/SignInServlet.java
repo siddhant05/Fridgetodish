@@ -1,10 +1,12 @@
 package com.fridgetodish.Servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.LinkedHashMap;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,6 +15,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+import com.fridgetodish.Action.CommonMethods;
 
 //import org.apache.log4j.Logger;
 
@@ -43,7 +47,7 @@ public class SignInServlet extends HttpServlet {
 					User lUser 				  			=new User();
 					try{
 						lConn= new DBConnection().getConnection();
-						StringBuilder lBuilder = new StringBuilder("select user_name,first_name,last_name,email from users where user_name=? and password=?");
+						StringBuilder lBuilder = new StringBuilder("select user_name,first_name,last_name,email,user_id from users where user_name=? and password=?");
 						
 						lPstmt	= lConn.prepareStatement(lBuilder.toString());			 
 						lPstmt.setString(1, lUserName);
@@ -55,21 +59,25 @@ public class SignInServlet extends HttpServlet {
 							lUser.setEmail(lRst.getString(4));
 							lUser.setFirst_name(lRst.getString(2));
 							lUser.setLast_name(lRst.getString(3));
+							lUser.setUserid(lRst.getInt(5));
 						}
 						
 						if(lSigninFlag){
 							HttpSession session=request.getSession();  
 	        				session.setAttribute("user", lUser);
 		        			//session.setAttribute("name",lFirstName);
+	        				LinkedHashMap<Integer,String>lIngredientMap=new LinkedHashMap<Integer,String>();
+	        				RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/browse-recipes.jsp");
+	        				lIngredientMap=new CommonMethods().getIngredients(lConn);
+	        				request.setAttribute("protien", lIngredientMap);
+	        				rd.forward(request, response);
 		        			
-		        			RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/UserProfile.jsp");
-		        		    rd.forward(request, response);
 		        			
 							
 						}else{
-							
-							//
-						}
+							RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/login.jsp?failure=2");
+		        		    rd.forward(request, response);
+		        		}
 						
 						
 					}catch(Exception e){

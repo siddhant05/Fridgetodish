@@ -19,8 +19,8 @@
  	<!-- CSS
    ================================================== -->
    <!--stylesheet-->
-   <link rel="stylesheet" href="resource/css/base.css">  
-   <link rel="stylesheet" href="resource/css/main.css">
+   <link rel="stylesheet" href="resource/css/base_1.css">  
+   <link rel="stylesheet" href="resource/css/main_1.css">
    <link rel="stylesheet" href="resource/css/vendor.css">  
   <!--  <link href="resource/css/style.css" rel='stylesheet' type='text/css' media="all" /> -->   
 

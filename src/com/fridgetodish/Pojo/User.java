@@ -10,7 +10,14 @@ public class User{
 	private String last_name;
 	private String username;
 	private String email;
+	private Integer userid;
 	
+	public Integer getUserid() {
+		return userid;
+	}
+	public void setUserid(Integer userid) {
+		this.userid = userid;
+	}
 	public String getFirst_name() {
 		return first_name;
 	}

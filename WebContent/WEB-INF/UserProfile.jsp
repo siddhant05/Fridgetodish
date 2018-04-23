@@ -23,8 +23,8 @@
 
  	<!-- CSS links
    ================================================== -->
-   <link rel="stylesheet" href="resource/css/base.css">  
-   <link rel="stylesheet" href="resource/css/main.css">
+   <link rel="stylesheet" href="resource/css/base_1.css">  
+   <link rel="stylesheet" href="resource/css/main_1.css">
 	<style>
 html {
 	font-size: 10px;
@@ -125,7 +125,9 @@ body {
 				<ul class="main-navigation">
 					<li class="highlight with-sep"><a href="LoadDataForHome" title="">Home</a></li>
 					<li><a class="smoothscroll"  href="#process" title="">Profile</a></li>
-					<li><a class=""  href="LogoutServlet" title="">Logout</a></li>									
+					<li><a class=""  href="LogoutServlet" title="">Logout</a></li>	
+					<li><a class=""  href="BrowseRecipeServlet" title="">Browse Recipes</a></li>
+													
 									
 				</ul>
 			</nav>
@@ -149,8 +151,9 @@ body {
 <div class="tab" style="margin-bottom:10px;">
   <button class="tablinks" onclick="openCity(event, 'About Me')" id="defaultOpen">About Me</button>
   <button class="tablinks" onclick="openCity(event, 'My Bookmarks')">My Bookmarks</button>
-  <button class="tablinks" onclick="openCity(event, 'My Favorites')">My Favorites</button>
+  
   <button class="tablinks" onclick="openCity(event, 'My Uploaded Dishes')">My Uploaded Dishes</button>
+  
 </div>
 
 <div id="About Me" class="tabcontent" style="left-margin: 100px">
@@ -175,11 +178,9 @@ body {
 </div>
 
 <div id="My Bookmarks" class="tabcontent">
-  <h3>My Bookmarks</h3><p>Hey.You haven't added any bookmarks yet. Hurry up!</p> 
-  <form action="FindRecipeServlet" method="get">
-   <a href="FindRecipeServlet"> Find Recipes</a>
-  </form>
-</div>
+  <h3>My Bookmarks</h3><ul id="savedishes">
+  </ul> 
+ </div>
 <div id="My Favorites" class="tabcontent">
   <h3>My Favorites</h3><p>Hey. You have no favorites?</p> 
 </div>
@@ -190,6 +191,9 @@ body {
 
 <script>
 function openCity(evt, cityName) {
+	if(cityName=='My Bookmarks'){
+		findbookmarks();
+	}
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -317,7 +321,7 @@ document.getElementById("defaultOpen").click();
    <script src="resource/js/plugins.js"></script>
    <script src="resource/js/index.js"></script>
    <script src="resource/js/main.js"></script>
-
+   <script src="resource/js/recipe.js"></script>
 </body>
 
 </html>

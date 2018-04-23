@@ -1,9 +1,4 @@
-<!--A Design by W3layouts 
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<%@taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c'%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,13 +11,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<link href="//fonts.googleapis.com/css?family=Sansita:400,400i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 <!--//online_fonts-->
-	<link href="resource/css/style.css" rel='stylesheet' type='text/css' media="all" /><!--stylesheet-->
+	<link href="resource/css/style_1.css" rel='stylesheet' type='text/css' media="all" /><!--stylesheet-->
+	<script type="text/javascript">
+	setTimeout(function(){
+		$('#messagebox').fadeOut('slow');
+	}, 18000);
+	</script>
 </head>
 <body>
 
 <!-- header 
    ================================================== -->
-
 <div class="row">
 	<div class="logo">
     <a href="index.html"></a>
@@ -65,6 +64,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				
 				<input type="submit" class="sign-in" value="Sign In">
 			</form>
+			
+			<div id="messagebox"> 
+			<c:if test="${param.failure eq 2}">
+				<div class="alert alert-danger">
+					<button href="#" type="button" class="close">
+						<i class="glyphicon glyphicon-remove-circle text-danger"></i>
+					</button>
+					<h4 style="color:red"><center>Sorry!</center></h4>
+					<p>
+						<center>Invalid Credentials! Please enter again.</center>
+					</p>
+				</div>
+			</c:if>
+			<c:if test="${param.exists eq 1}">
+				<div class="alert alert-danger">
+					<button href="#" type="button" class="close">
+						<i class="glyphicon glyphicon-remove-circle text-danger"></i>
+					</button>
+					<h4><center>Email already exists!</center></h4>
+					<p>
+						<center>A user with the same email id is already present in the system</center>
+					</p>
+				</div>
+			</c:if>
+	</div>
+	
+</script>
 		</div>
 		<div id="signup-agile">   
 			<form action="SignUpServlet" method="post">

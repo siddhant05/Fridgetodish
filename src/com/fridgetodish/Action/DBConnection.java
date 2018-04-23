@@ -65,6 +65,13 @@ import java.sql.SQLException;
 
 public class DBConnection{
 	
+	private static String url = "jdbc:mysql://localhost:3306/fridgetodish?autoReconnect=true&useSSL=false";    
+    private static String driverName = "com.mysql.jdbc.Driver";   
+    private static String username = "root";   
+    private static String password = "Pratima@1706";
+    private static Connection con;
+	
+	
 	
 	//private static String url = "jdbc:mysql://localhost:3306/fridgetodish?autoReconnect=true&useSSL=false";
 	/*private static String url=String.format(
@@ -79,52 +86,42 @@ public class DBConnection{
 	//public static final Logger logger = Logger.getLogger(DBConnection.class.toString());
    // private static String urlstring;
 */    
-    public static Connection getConnection() throws URISyntaxException, SQLException {
-       // URI url = new URI(System.getenv("mysql://b753ba6a0e03b3:ad297d2c@us-cdbr-iron-east-05.cleardb.net/heroku_6706d4fbc456e71?reconnect=true"));
-
-       // String username = url.getUserInfo().split(":")[0];
-       // String password = url.getUserInfo().split(":")[1];
-        String username="b753ba6a0e03b3";
+    
+  // ****setting connection with Cleardb database****
+  
+    /*  public static Connection getConnection() throws URISyntaxException, SQLException {
+      
+        String username ="b753ba6a0e03b3";
         String password = "ad297d2c";
        // String dbUrl = "jdbc:mysql://" + url.getHost() + url.getPath();
         String dbUrl="jdbc:mysql://us-cdbr-iron-east-05.cleardb.net/heroku_6706d4fbc456e71";
         return DriverManager.getConnection(dbUrl, username, password);
-    }
+    }*/
 
-   /* public  Connection getConnection() {
+    public  Connection getConnection() {
     	
-           try {
-        	 //  Credential creds = GoogleCredential.getApplicationDefault();
-        	 con = DriverManager.getConnection(url, username, password);
+        try {
 			Class.forName(driverName);
-		} 
-           
-           catch (SQLException e) {
+		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-           catch (ClassNotFoundException e) {
-   			// TODO Auto-generated catch block
-   			e.printStackTrace();
-   		}
-            
-            try {
-               con = DriverManager.getConnection(url, username, password);
-            	//con=DriverManager.getConnection(url);
-               //logger.error("Connection Successful");
-            	
-            } catch (SQLException ex) {
-                // log an exception. fro example:
-            	//logger.error("Error Occured While creating connection---->", ex);
-            }
-         //catch (ClassNotFoundException ex) {
-            // log an exception. for example:
-           // System.out.println("Driver not found."); 
-        //}
-    	return con;
-    }
-    
-*/
+         
+         try {
+            con = DriverManager.getConnection(url, username, password);
+         	//con=DriverManager.getConnection(url);
+            //logger.error("Connection Successful");
+         	
+         } catch (SQLException ex) {
+             // log an exception. fro example:
+         	//logger.error("Error Occured While creating connection---->", ex);
+         }
+      //catch (ClassNotFoundException ex) {
+         // log an exception. for example:
+        // System.out.println("Driver not found."); 
+     //}
+ 	return con;
+ }
     
     /*public static void main (String [] args){
     	try{

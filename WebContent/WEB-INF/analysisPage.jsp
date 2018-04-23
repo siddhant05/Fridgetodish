@@ -27,7 +27,7 @@
 <link href="resource/css/bootstrap.min.css" rel="stylesheet" />
 
 <link rel="stylesheet" href="resource/css/base.css">  
- <link rel="stylesheet" href="resource/css/main.css">
+ <link rel="stylesheet" href="resource/css/main_1.css">
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -49,7 +49,7 @@
 <link href="resource/css/metisMenu.min.css" rel="stylesheet" />
 <!-- Custom CSS -->
 <link href="resource/css/sb-admin-2.css" rel="stylesheet" />
-<link href="resource/css/font-awesome.css" rel="stylesheet" />
+<link href="resource/css/font-awesome_1.css" rel="stylesheet" />
 <!-- Custom Fonts -->
 <link href="resource/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <style type="text/css">

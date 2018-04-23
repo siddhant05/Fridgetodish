@@ -28,20 +28,26 @@ public class FetchRecipesServlet extends HttpServlet {
 	private static final Logger LOGGER = Logger.getLogger(FetchRecipesServlet.class);
 	//private static final long serialVersionUID = 1L;
 
-		protected void doPost(HttpServletRequest request, HttpServletResponse response)  
+		protected void doGet(HttpServletRequest request, HttpServletResponse response)  
 	                    throws ServletException, IOException {    
 			
 			Connection lConn=null;
-			LinkedHashMap<Integer, String> lRecipeMap = new LinkedHashMap<Integer, String>();
+			//LinkedHashMap<String, String> lRecipeMap = new LinkedHashMap<String, String>();
 			PreparedStatement lPstmt 					   = null;
 			ResultSet lRst   							   = null;
 			try{
-				lConn=new DBConnection().getConnection();				
-				String[] lSelectedIngredients=request.getParameterValues("protien");
+				lConn=new DBConnection().getConnection();			
+				StringBuilder lXMLBuilder = new StringBuilder();
+				String[] lSelectedIngredients=request.getParameterValues("lRC[]");
+			
 				
-				StringBuilder lSearchQuery=  new StringBuilder("select b.recipe_id,b.recipe_name from recipes_ingredients_link a join recipes b on a.recipe_id=b.recipe_id");
-											 lSearchQuery.append(" join ingredients c on c.ingredient_id=a.ingredient_id where a.ingredient_id in (xxx)");
-				
+				StringBuilder lSearchQuery=  new StringBuilder("select r.recipe_name, r.recipepage_link, r.image_link, r.cooking_time,C.recipe_id from ");
+											 lSearchQuery.append(" (select  recipe_id, count(ingredient_id) as Count_Matched, (select count(ingredient_id) ");
+											 lSearchQuery.append(" from recipes_ingredients_link ril  where rl.recipe_id=ril.recipe_id ) as Count_Total ");
+											 lSearchQuery.append(" from recipes_ingredients_link rl where ingredient_id in (xxx) ");
+											 lSearchQuery.append(" group by recipe_id) as C inner join recipes r on r.recipe_id=C.recipe_id where C.Count_Total-C.Count_Matched=0 ");
+					
+											 
 					String lQs="";
 					for(int i=0;i<lSelectedIngredients.length;i++){
 						if(i==0){
@@ -57,18 +63,21 @@ public class FetchRecipesServlet extends HttpServlet {
 					}
 					
 					lRst=lPstmt.executeQuery();
+					lXMLBuilder.append("<recipes>");
 					while(lRst.next()){
-						lRecipeMap.put(lRst.getInt(1), lRst.getString(2));
+						lXMLBuilder.append("<recipe>");
+						lXMLBuilder.append("<id>" + lRst.getInt(5)+"</id>");
+						lXMLBuilder.append("<name>" + lRst.getString(1)+"</name>");
+						lXMLBuilder.append("<link>" + lRst.getString(2) +"</link>");
+						lXMLBuilder.append("<pic>" + lRst.getString(3) +"</pic>");
+						lXMLBuilder.append("<time>" + lRst.getString(4) +"</time>");
+						lXMLBuilder.append("</recipe>");
 					}
-											 
-			    RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/analysisPage.jsp");
-			    LinkedHashMap<Integer,String>lIngredientMap=new LinkedHashMap<Integer,String>();
-				lIngredientMap=new CommonMethods().getIngredients(lConn);
-				request.setAttribute("protien", lIngredientMap);
-			    request.setAttribute("recipes", lRecipeMap); 
-			    rd.forward(request, response);
-		        
-				
+					lXMLBuilder.append("</recipes>");	
+					response.setContentType("text/xml");
+					response.setHeader("Cache-Control", "no-cache");
+					response.getWriter().write(lXMLBuilder.toString());
+			   
 			}catch(Exception e){
 				
 			}
@@ -81,13 +90,5 @@ public class FetchRecipesServlet extends HttpServlet {
 	        }
 	        
 	      }  
-		
-		protected void doGet(HttpServletRequest request, HttpServletResponse response)  
-                throws ServletException, IOException{
-			doPost(request, response);
-			
-		}
-		
-		
 	}  
 

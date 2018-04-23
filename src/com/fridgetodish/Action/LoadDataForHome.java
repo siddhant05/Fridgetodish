@@ -35,7 +35,7 @@ public class LoadDataForHome extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		
-	  	RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/index.jsp");
+	  	RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/landingpage.jsp");
 	    rd.forward(request, response);
 	}
 

@@ -135,25 +135,61 @@ $('.tab a,.links a').on('click', function (e) {
 
     });
     
-	function ajaxforRecipeLoad(){
+    function ajaxforRecipeLoad(){
 
-
-		var lRecipeID = $('input[name=recipe]:checked').val();
-
-    	jQuery("#profile-pills").html("");
-    	$
+  
+		var lIngredientID = jQuery('[name="Ingredients"]').val();
+		var lCombinedHTML="";
+		var lPaginationCount="";
+		
+    	jQuery("#recipelist").html("");
+    	jQuery
     			.ajax({
     				type : "GET",
-    				url : "RecipeInfoServlet",
+    				url : "FetchRecipesServlet",
     				contentType : "application/x-www-form-urlencoded; charset=UTF-8",
     				data : {
-    					'lRC' : lRecipeID
+    					'lRC' : lIngredientID
     				},
     				success : function(responseText) {
-
+    					
     					var lData = responseText.getElementsByTagName("recipe");
-    				
-    						$("#profile-pills").html(lData);
+    					lPaginationCount=lData.length;
+    	            	for(var i=0;i<lData.length;i++){
+    	            		
+    	            		//var lIsotopetag='<div class="four isotope-box columns">';
+    	            		var lName=lData[i].childNodes[1].firstChild.nodeValue;
+        					var lRecipeLink=lData[i].childNodes[2].firstChild.nodeValue;
+        					var lImageLink=lData[i].childNodes[3].firstChild.nodeValue;
+    	            		var lTime=lData[i].childNodes[4].firstChild.nodeValue;
+        					var lID=lData[i].childNodes[0].firstChild.nodeValue;
+    	            		var lHTML='<div class="four isotope-box columns">'+
+    	            				  '<div class="thumbnail-holder" style="height: auto;">'+
+    	            				  '<a href="'+lRecipeLink+'?recipe='+lID+'">'+
+    	        						'<img src="'+lImageLink+'" alt="">'+
+    	        						'<div class="hover-cover"></div>'+
+    	        						'<div class="hover-icon">View Recipe</div>'+
+    	        					'</a>'+
+    	        					'</div>'+
+
+    	        				
+    	        				'<div class="recipe-box-content">'+
+    	        					'<h3><a href="'+lRecipeLink+'?recipe='+lID+'">'+lName+'</a></h3>'+
+
+    	        					'<div class="rating five-stars">'+
+    	        						
+    	        						'<div class="recipe-meta"><i class="fa fa-clock-o"></i>'+ lTime+'</div><div class="clearfix"></div></div></div></div>';
+    	        					
+    	            		
+    	            		//var lHTML=lIsotopetag+'<div class="thumbnail-holder"><a href="'+lRecipeLink+'">'+'<img src="'+lImageLink+'" alt=""/><div class="hover-cover"></div><div class="hover-icon">View Recipe</div></a>'+'</div></div><div class="recipe-box-content"><h3><a href="'+lRecipeLink+'">'+lName+'</a></h3><div class="rating five-stars">'+'<div class="star-rating"></div><div class="star-bg"></div></div><div class="recipe-meta"><i class="fa fa-clock-o"></i>'  + ''+lTime+'</div>';
+    	            		
+    	            		lCombinedHTML=lCombinedHTML+lHTML;  
+    	            	}
+    	            	
+    						jQuery("#recipelist").html(lCombinedHTML);
+    						if(lPaginationCount<4){
+    							jQuery(".pagination-container").hide();
+    						}
     						
     				}
 
