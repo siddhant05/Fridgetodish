@@ -48,8 +48,8 @@
 
 	   	<nav id="main-nav-wrap">
 				<ul class="main-navigation">
-					<li class="highlight with-sep"><a href="LoadDataForHome" title="">Home</a></li>
-					<li><a class="smoothscroll"  href="UserProfileServlet" title="">Profile</a></li>
+					<li><a class=""  href="BrowseRecipeServlet" title="">Browse Recipes</a></li>
+					<li><a href="UserProfileServlet" title="">My Profile</a></li>
 					<li><a class=""  href="LogoutServlet" title="">Logout</a></li>									
 									
 				</ul>
@@ -198,7 +198,7 @@
 
 				<!-- Content -->
 				<div class="recipe-box-content">
-					<h3><a href="recipepage2servlet">BBQ Chicken Legs</a></h3>
+					<h3><a href="RecipePage15Servlet">BBQ Chicken Legs</a></h3>
 					
 					
 
@@ -216,7 +216,7 @@
 				
 				<!-- Content -->
 				<div class="recipe-box-content">
-					<h3><a href="recipepage3servlet">Chicken Tikka Masala</a></h3>
+					<h3><a href="RecipePage4Servlet">Chicken Tikka Masala</a></h3>
 					
 					
 
@@ -232,7 +232,7 @@
 				
 				<!-- Content -->
 				<div class="recipe-box-content">
-					<h3><a href="recipepage2servlet">Shahi Egg Masala</a></h3>
+					<h3><a href="RecipePage12Servlet">Shahi Egg Masala</a></h3>
 					
 					
 

@@ -49,8 +49,8 @@
 
 	   	<nav id="main-nav-wrap">
 				<ul class="main-navigation">
-					<li class="highlight with-sep"><a href="LoadDataForHome" title="">Home</a></li>
-					<li><a class="smoothscroll"  href="UserProfileServlet" title="">Profile</a></li>
+					<li><a class=""  href="BrowseRecipeServlet" title="">Browse Recipes</a></li>
+					<li><a href="UserProfileServlet" title="">My Profile</a></li>
 					<li><a class=""  href="LogoutServlet" title="">Logout</a></li>									
 									
 				</ul>
@@ -180,7 +180,7 @@
 
 				<!-- Content -->
 				<div class="recipe-box-content">
-					<h3><a href="recipepage2servlet">Malvani Fish Curry</a></h3>
+					<h3><a href="RecipePage14Servlet">Malvani Fish Curry</a></h3>
 					
 					
 
@@ -198,7 +198,7 @@
 				
 				<!-- Content -->
 				<div class="recipe-box-content">
-					<h3><a href="recipepage3servlet">Chicken Tikka Masala</a></h3>
+					<h3><a href="RecipePage4Servlet">Chicken Tikka Masala</a></h3>
 					
 					
 
@@ -214,7 +214,7 @@
 				
 				<!-- Content -->
 				<div class="recipe-box-content">
-					<h3><a href="recipepage2servlet">Chunky Beef Stew</a></h3>
+					<h3><a href="RecipePage13Servlet">Chunky Beef Stew</a></h3>
 					
 					
 

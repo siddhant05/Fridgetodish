@@ -50,8 +50,8 @@
 
 	   	<nav id="main-nav-wrap">
 				<ul class="main-navigation">
-					<li class="highlight with-sep"><a href="BrowseRecipeServlet" title="">Browse Recipes</a></li>
-					<li><a class="smoothscroll"  href="UserProfileServlet" title="">Profile</a></li>
+					<li><a class=""  href="BrowseRecipeServlet" title="">Browse Recipes</a></li>
+					<li><a href="UserProfileServlet" title="">My Profile</a></li>
 					<li><a class=""  href="LogoutServlet" title="">Logout</a></li>									
 									
 				</ul>
@@ -124,12 +124,12 @@
 
 			<li>
 				<input id="check-2" type="checkbox" name="check" value="check-2">
-				<label itemprop="ingredients" for="check-2">1/2 tablespoon unsalted butter</label>
+				<label itemprop="ingredients" for="check-2">1‚ÅÑ2 tablespoon unsalted butter</label>
 			</li>
 
 			<li>
 				<input id="check-3" type="checkbox" name="check" value="check-3">
-				<label itemprop="ingredients" for="check-3">1/ÅÑ2 cup spinach, chopped</label>
+				<label itemprop="ingredients" for="check-3">1‚ÅÑ2 cup spinach, chopped</label>
 			</li>
 
 			<li>
@@ -186,7 +186,7 @@
 
 				<!-- Content -->
 				<div class="recipe-box-content">
-					<h3><a href="recipepage2servlet">Malvan Fish Curry</a></h3>
+					<h3><a href="RecipePage14Servlet">Malvan Fish Curry</a></h3>
 					
 					
 
@@ -204,7 +204,7 @@
 				
 				<!-- Content -->
 				<div class="recipe-box-content">
-					<h3><a href="recipepage3servlet">Chicken Tikka Masala</a></h3>
+					<h3><a href="RecipePage4Servlet">Chicken Tikka Masala</a></h3>
 					
 					
 
@@ -220,7 +220,7 @@
 				
 				<!-- Content -->
 				<div class="recipe-box-content">
-					<h3><a href="recipepage2servlet">Shahi Egg Masala</a></h3>
+					<h3><a href="RecipePage12Servlet">Shahi Egg Masala</a></h3>
 					
 					
 

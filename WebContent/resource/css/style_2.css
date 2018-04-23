@@ -5691,7 +5691,7 @@ a.print i { font-size: 14px; margin-right: 2px; }
 
 .ingredients:before,
 .ingredients:after {
-	content:"";
+	content:"-";
 	height: 100%;
 	width: 1px;
 	background-color: #ffd4d4;
@@ -5732,7 +5732,7 @@ a.print i { font-size: 14px; margin-right: 2px; }
 }
 
 .ingredients input[type=checkbox]:checked + label:before {
-	content: "ï€Œ";
+	content: "-";
 	font-family: "FontAwesome";
 	font-size: 13px;
 	color: #fff;
