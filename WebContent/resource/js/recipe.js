@@ -95,11 +95,8 @@ function setParametersinPage(){
 					 '<div class="comment-by"><strong>'+lName+'</strong><span class="date">'+lDate+'</span>'+
 					 '</div>'+
 					 	'<p>'+lComment+'</p>'+
-					 	'<div class="rating five-stars">'+
-					 		'<div class="star-rating"></div>'+
-					 		'<div class="star-bg"></div>'+
 					 	'</div>'+
-					 '</div>'+
+					 
 					 '</li>';
 					lCombinedHTML=lCombinedHTML+lHTML;
 					
