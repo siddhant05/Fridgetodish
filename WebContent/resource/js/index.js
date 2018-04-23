@@ -146,13 +146,14 @@ $('.tab a,.links a').on('click', function (e) {
     
     function ajaxforRecipeLoad(){
 
+    	
   
-		var lIngredientID = jQuery('[name="Ingredients"]').val();
+    	var lIngredientID = $('[name="Ingredients"]').val();
 		var lCombinedHTML="";
 		var lPaginationCount="";
-		
+		alert(lIngredientID);
     	jQuery("#recipelist").html("");
-    	jQuery
+    	$
     			.ajax({
     				type : "GET",
     				url : "FetchRecipesServlet",
@@ -165,44 +166,51 @@ $('.tab a,.links a').on('click', function (e) {
     					var lData = responseText.getElementsByTagName("recipe");
     					lPaginationCount=lData.length;
     					jQuery("#recipeheading").html("Suggested Recipes")
-    	            	for(var i=0;i<lData.length;i++){
-    	            		
-    	            		//var lIsotopetag='<div class="four isotope-box columns">';
-    	            		var lName=lData[i].childNodes[1].firstChild.nodeValue;
-        					var lRecipeLink=lData[i].childNodes[2].firstChild.nodeValue;
-        					var lImageLink=lData[i].childNodes[3].firstChild.nodeValue;
-    	            		var lTime=lData[i].childNodes[4].firstChild.nodeValue;
-        					var lID=lData[i].childNodes[0].firstChild.nodeValue;
-    	            		var lHTML='<div class="four isotope-box columns">'+
-    	            				  '<div class="thumbnail-holder" style="height: auto;">'+
-    	            				  '<a href="'+lRecipeLink+'?recipe='+lID+'">'+
-    	        						'<img src="'+lImageLink+'" alt="">'+
-    	        						'<div class="hover-cover"></div>'+
-    	        						'<div class="hover-icon">View Recipe</div>'+
-    	        					'</a>'+
-    	        					'</div>'+
+    					if(lData.length>0){
+    						for(var i=0;i<lData.length;i++){
+        	            		
+        	            		//var lIsotopetag='<div class="four isotope-box columns">';
+        	            		var lName=lData[i].childNodes[1].firstChild.nodeValue;
+            					var lRecipeLink=lData[i].childNodes[2].firstChild.nodeValue;
+            					var lImageLink=lData[i].childNodes[3].firstChild.nodeValue;
+        	            		var lTime=lData[i].childNodes[4].firstChild.nodeValue;
+            					var lID=lData[i].childNodes[0].firstChild.nodeValue;
+        	            		var lHTML='<div class="four isotope-box columns">'+
+        	            				  '<div class="thumbnail-holder" style="height: auto;">'+
+        	            				  '<a href="'+lRecipeLink+'?recipe='+lID+'">'+
+        	        						'<img src="'+lImageLink+'" alt="">'+
+        	        						'<div class="hover-cover"></div>'+
+        	        						'<div class="hover-icon">View Recipe</div>'+
+        	        					'</a>'+
+        	        					'</div>'+
 
-    	        				
-    	        				'<div class="recipe-box-content">'+
-    	        					'<h3><a href="'+lRecipeLink+'?recipe='+lID+'">'+lName+'</a></h3>'+
+        	        				
+        	        				'<div class="recipe-box-content">'+
+        	        					'<h3><a href="'+lRecipeLink+'?recipe='+lID+'">'+lName+'</a></h3>'+
 
-    	        					'<div class="rating five-stars">'+
-    	        						
-    	        						'<div class="recipe-meta"><i class="fa fa-clock-o"></i>'+ lTime+'</div><div class="clearfix"></div></div></div></div>';
-    	        					
-    	            		
-    	            		//var lHTML=lIsotopetag+'<div class="thumbnail-holder"><a href="'+lRecipeLink+'">'+'<img src="'+lImageLink+'" alt=""/><div class="hover-cover"></div><div class="hover-icon">View Recipe</div></a>'+'</div></div><div class="recipe-box-content"><h3><a href="'+lRecipeLink+'">'+lName+'</a></h3><div class="rating five-stars">'+'<div class="star-rating"></div><div class="star-bg"></div></div><div class="recipe-meta"><i class="fa fa-clock-o"></i>'  + ''+lTime+'</div>';
-    	            		
-    	            		lCombinedHTML=lCombinedHTML+lHTML;  
-    	            	}
+        	        					'<div class="rating five-stars">'+
+        	        						
+        	        						'<div class="recipe-meta"><i class="fa fa-clock-o"></i>'+ lTime+'</div><div class="clearfix"></div></div></div></div>';
+        	        					
+        	            		
+        	            		//var lHTML=lIsotopetag+'<div class="thumbnail-holder"><a href="'+lRecipeLink+'">'+'<img src="'+lImageLink+'" alt=""/><div class="hover-cover"></div><div class="hover-icon">View Recipe</div></a>'+'</div></div><div class="recipe-box-content"><h3><a href="'+lRecipeLink+'">'+lName+'</a></h3><div class="rating five-stars">'+'<div class="star-rating"></div><div class="star-bg"></div></div><div class="recipe-meta"><i class="fa fa-clock-o"></i>'  + ''+lTime+'</div>';
+        	            			
+        	            		lCombinedHTML=lCombinedHTML+lHTML;  
+        	            	}
+    					}else{
+    						
+    						
+    						lCombinedHTML='<center><div class="one isotope-box columns notification error closeable">'+
+    						'<h3><span><center>Surprising!<center></span><br>We could not find any recipes as per selecting ingredients.</h3>'+
+    						'<a class="close" href="#"></a></div><center>';
+    					
+    						
+    					}
     	            	
-    						jQuery("#recipelist").html(lCombinedHTML);
-    						if(lPaginationCount<4){
-    							jQuery(".pagination-container").hide();
-    						}
+    	            	
+    						$("#recipelist").html(lCombinedHTML);
     						
     				}
 
     			});
-
     }
