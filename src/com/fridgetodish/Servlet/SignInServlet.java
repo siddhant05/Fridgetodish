@@ -68,6 +68,8 @@ public class SignInServlet extends HttpServlet {
 		        			//session.setAttribute("name",lFirstName);
 	        				LinkedHashMap<Integer,String>lIngredientMap=new LinkedHashMap<Integer,String>();
 	        				RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/browse-recipes.jsp");
+	        				response.setContentType("text/html; charset=UTF-8");
+	        				response.setCharacterEncoding("utf-8");
 	        				lIngredientMap=new CommonMethods().getIngredients(lConn);
 	        				request.setAttribute("protien", lIngredientMap);
 	        				rd.forward(request, response);

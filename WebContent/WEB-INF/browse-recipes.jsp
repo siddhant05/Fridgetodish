@@ -2,7 +2,7 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
-
+<%@ page import="com.fridgetodish.Pojo.*"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <head>
@@ -73,7 +73,7 @@
 				
 			</li>
 			<li><a href="SubmitRecipeServlet">Submit Recipe</a></li>
-			<li><a href="#">Welcome <%=session.getAttribute("user")%></a>
+			<li><a href="#">Welcome <%=((User) request.getSession().getAttribute("user")).getFirst_name().toString()%></a>
 				<ul> 
 				<li><a href= "LogoutServlet"> Logout</a></li>
 				</ul>
