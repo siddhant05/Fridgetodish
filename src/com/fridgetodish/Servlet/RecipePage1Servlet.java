@@ -12,11 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-//import org.apache.log4j.Logger;
-
-import com.fridgetodish.Action.DBConnection;
 import com.fridgetodish.Pojo.User;
 
  
@@ -36,6 +32,8 @@ public class RecipePage1Servlet extends HttpServlet {
 					try{
 						String lRecipeID=request.getParameter("recipe");
 						request.setAttribute("recipeid", lRecipeID);
+						response.setContentType("text/html; charset=UTF-8");
+        				response.setCharacterEncoding("utf-8");
 						RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/recipe-page-1.jsp");
 		        		    rd.forward(request, response);
 		        			

@@ -36,6 +36,8 @@ public class RecipePage6Servlet extends HttpServlet {
 					try{
 						String lRecipeID=request.getParameter("recipe");
 						request.setAttribute("recipeid", lRecipeID);
+						response.setContentType("text/html; charset=UTF-8");
+        				response.setCharacterEncoding("utf-8");
 						RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/recipe-page-6.jsp");
 		        		    rd.forward(request, response);
 		        			
