@@ -61,7 +61,7 @@ public class SavereviewServlet extends HttpServlet {
 				lPstmt.setString(4, lComment);
 				
 				lPstmt.executeUpdate();
-				String lQuery="select  b.first_name,a.comments,date(a.post_time) from reviews a join users b on a.user_id=b.user_id where a.recipe_id=?";
+				String lQuery="select  b.first_name,a.review,date(a.post_time) from reviews a join users b on a.user_id=b.user_id where a.recipe_id=?";
 				lPstmt.clearParameters();
 				lPstmt	= lConn.prepareStatement(lQuery);
 				lPstmt.setInt(1, Integer.parseInt(lRecipe));
