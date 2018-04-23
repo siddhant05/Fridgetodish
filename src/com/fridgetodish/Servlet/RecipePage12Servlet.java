@@ -20,8 +20,8 @@ import com.fridgetodish.Action.DBConnection;
 import com.fridgetodish.Pojo.User;
 
  
-@WebServlet(value="/RecipePage1Servlet")
-public class RecipePage1Servlet extends HttpServlet {  
+@WebServlet(value="/RecipePage12Servlet")
+public class RecipePage12Servlet extends HttpServlet {  
 	/**
 	 * 
 	 */
@@ -36,7 +36,7 @@ public class RecipePage1Servlet extends HttpServlet {
 					try{
 						String lRecipeID=request.getParameter("recipe");
 						request.setAttribute("recipeid", lRecipeID);
-						RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/recipe-page-1.jsp");
+						RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/recipe-page-12.jsp");
 		        		    rd.forward(request, response);
 		        			
 							

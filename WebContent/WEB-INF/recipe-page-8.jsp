@@ -82,24 +82,24 @@
 		<!-- Header -->
 		<section class="recipe-header">
 			<div class="title-alignment">
-				<h2>Baked French Toast</h2>
+				<h2>Scrambled Eggs</h2>
 			</div>
 		</section>
 		
 
 		<!-- Slider -->
 		<div class="recipeSlider rsDefault">
-		    <img itemprop="image" class="rsImg" src="resource/images/Baked French Toast.jpg" alt="" />
+		    <img itemprop="image" class="rsImg" src="resource/images/Scrambled Eggs.jpg" alt="" />
 		</div>
 
 
 		<!-- Details -->
 		<section class="recipe-details" itemprop="nutrition">
 			<ul>
-				<li>Serves: <strong itemprop="recipeYield">12 people</strong></li>
-				<li>Prep Time: <strong itemprop="prepTime">15 Min</strong></li>
-				<li>Cooking: <strong itemprop="cookTime">40 Min</strong></li>
-				<li>Calories: <strong itemprop="calories">395 cal</strong></li>
+				<li>Serves: <strong itemprop="recipeYield">2 people</strong></li>
+				<li>Prep Time: <strong itemprop="prepTime">4 Min</strong></li>
+				<li>Cooking: <strong itemprop="cookTime">1 Min</strong></li>
+				<li>Calories: <strong itemprop="calories">140 cal</strong></li>
 			</ul>
 			
 			<a href="#" id="bookmark_button" class="print" onclick="saveBookmarks()"><i class="fa fa-print"></i> Add to Bookmarks</a>
@@ -108,7 +108,7 @@
 
 
 		<!-- Text -->
-		<p itemprop="description">"Always a hit with guests. You may sprinkle the top with pecans if you wish."</p>
+		<p itemprop="description">Spice up this easy egg favorite by adding pepper jack and salsa or lighten it up by substituting cooking spray and water for the butter and milk.</p>
 
 
 		<!-- Ingredients -->
@@ -116,33 +116,24 @@
 		<ul class="ingredients" style="list-style-type:none;">
 			<li>
 				<input id="check-1" type="checkbox" name="check" value="check-1">
-				<label itemprop="ingredients" for="check-1">1 pound loaf French bread, cut diagonally in 1 inch slices</label>
+				<label itemprop="ingredients" for="check-1">4 Eggs</label>
 			</li>
 
 			<li>
 				<input id="check-2" type="checkbox" name="check" value="check-2">
-				<label itemprop="ingredients" for="check-2">8 eggs</label>
+				<label itemprop="ingredients" for="check-2">1/4 cup	milk</label>
 			</li>
 
 			<li>
 				<input id="check-3" type="checkbox" name="check" value="check-3">
-				<label itemprop="ingredients" for="check-3">2 cups milk</label>
+				<label itemprop="ingredients" for="check-3">salt and pepper, as desired</label>
 			</li>
 
 			<li>
 				<input id="check-4" type="checkbox" name="check" value="check-4">
-				<label itemprop="ingredients" for="check-4">1 1/2 cups half-and-half cream</label>
+				<label itemprop="ingredients" for="check-4">2 tsp.	butter</label>
 			</li>
-
-			<li>
-				<input id="check-5" type="checkbox" name="check" value="check-5">
-				<label itemprop="ingredients" for="check-5">3/4 cup butter</label>
-			</li>
-
-			<li>
-				<input id="check-6" type="checkbox" name="check" value="check-6">
-				<label itemprop="ingredients" for="check-6">1 1/3 cups brown sugar</label>
-			</li>	
+	
 
 										
 		</ul>
@@ -151,9 +142,9 @@
 		<!-- Directions -->
 		<h3>Directions</h3>
 		<ol class="directions" itemprop="recipeInstructions">
-			<li>Butter a 9x13 inch baking dish. Arrange the slices of bread in the bottom. In a large bowl, beat together eggs, milk, cream, vanilla and cinnamon. Pour over bread slices, cover, and refrigerate overnight.</li>
-			<li>Preheat oven to 350 degrees F (175 degrees C). In a small saucepan, combine butter, brown sugar and corn syrup; heat until bubbling. Pour over bread and egg mixture.</li>
-			<li>Bake in preheated oven, uncovered, for 40 minutes.</li>
+			<li>BEAT eggs, milk, salt and pepper in medium bowl until blended.</li>
+			<li>HEAT butter in large nonstick skillet over medium heat until hot. POUR IN egg mixture. As eggs begin to set, GENTLY PULL the eggs across the pan with a spatula, forming large soft curds.</li>
+			<li>CONTINUE cooking – pulling, lifting and folding eggs – until thickened and no visible liquid egg remains. Do not stir constantly. REMOVE from heat. SERVE immediately.</li>
 			
 		</ol>
 

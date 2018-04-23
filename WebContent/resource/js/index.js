@@ -164,6 +164,7 @@ $('.tab a,.links a').on('click', function (e) {
     					
     					var lData = responseText.getElementsByTagName("recipe");
     					lPaginationCount=lData.length;
+    					jQuery("#recipeheading").html("Suggested Recipes")
     	            	for(var i=0;i<lData.length;i++){
     	            		
     	            		//var lIsotopetag='<div class="four isotope-box columns">';

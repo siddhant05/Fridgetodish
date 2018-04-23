@@ -151,7 +151,7 @@
 
 	<!-- Headline -->
 	<div class="sixteen columns">
- 		<h3 class="headline">Top Recipes</h3>
+ 		<h3 id="recipeheading" class="headline">Top Recipes</h3>
 		<span class="line margin-bottom-35"></span>
 		<div class="clearfix"></div>
 	</div>

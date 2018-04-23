@@ -28,7 +28,6 @@
 	<script src="js/modernizr.js"></script>
 </head>
 
-<body>
 <body onload="setParametersinPage()">
 
 <!-- Wrapper -->
@@ -82,33 +81,33 @@
 		<!-- Header -->
 		<section class="recipe-header">
 			<div class="title-alignment">
-				<h2>Baked French Toast</h2>
+				<h2>Butter Chicken</h2>
 			</div>
 		</section>
 		
 
 		<!-- Slider -->
 		<div class="recipeSlider rsDefault">
-		    <img itemprop="image" class="rsImg" src="resource/images/Baked French Toast.jpg" alt="" />
+		    <img itemprop="image" class="rsImg" src="resource/images/butter chicken.jpeg" alt="" />
 		</div>
 
 
 		<!-- Details -->
 		<section class="recipe-details" itemprop="nutrition">
 			<ul>
-				<li>Serves: <strong itemprop="recipeYield">12 people</strong></li>
+				<li>Serves: <strong itemprop="recipeYield">4 people</strong></li>
 				<li>Prep Time: <strong itemprop="prepTime">15 Min</strong></li>
 				<li>Cooking: <strong itemprop="cookTime">40 Min</strong></li>
-				<li>Calories: <strong itemprop="calories">395 cal</strong></li>
+				<li>Calories: <strong itemprop="calories">448 cal</strong></li>
 			</ul>
-			
 			<a href="#" id="bookmark_button" class="print" onclick="saveBookmarks()"><i class="fa fa-print"></i> Add to Bookmarks</a>
+			
 			<div class="clearfix"></div>
 		</section>
 
 
 		<!-- Text -->
-		<p itemprop="description">"Always a hit with guests. You may sprinkle the top with pecans if you wish."</p>
+		<p itemprop="description">"Chicken breasts are dipped in beaten eggs and cracker crumbs, then baked with butter. These chicken breast are really tender and moist. Excellent flavor! I never have leftovers."</p>
 
 
 		<!-- Ingredients -->
@@ -116,45 +115,40 @@
 		<ul class="ingredients" style="list-style-type:none;">
 			<li>
 				<input id="check-1" type="checkbox" name="check" value="check-1">
-				<label itemprop="ingredients" for="check-1">1 pound loaf French bread, cut diagonally in 1 inch slices</label>
+				<label itemprop="ingredients" for="check-1">2 eggs, beaten</label>
 			</li>
 
 			<li>
-				<input id="check-2" type="checkbox" name="check" value="check-2">
-				<label itemprop="ingredients" for="check-2">8 eggs</label>
+				<input id="check-1" type="checkbox" name="check" value="check-1">
+				<label itemprop="ingredients" for="check-1">1/2 teaspoon garlic salt</label>
 			</li>
 
 			<li>
 				<input id="check-3" type="checkbox" name="check" value="check-3">
-				<label itemprop="ingredients" for="check-3">2 cups milk</label>
+				<label itemprop="ingredients" for="check-3">ground black pepper to taste</label>
 			</li>
 
 			<li>
 				<input id="check-4" type="checkbox" name="check" value="check-4">
-				<label itemprop="ingredients" for="check-4">1 1/2 cups half-and-half cream</label>
+				<label itemprop="ingredients" for="check-4">4 skinless, boneless chicken breast halves</label>
 			</li>
-
+		
 			<li>
 				<input id="check-5" type="checkbox" name="check" value="check-5">
-				<label itemprop="ingredients" for="check-5">3/4 cup butter</label>
+				<label itemprop="ingredients" for="check-5">1/2 cup butter, cut into pieces</label>
 			</li>
-
-			<li>
-				<input id="check-6" type="checkbox" name="check" value="check-6">
-				<label itemprop="ingredients" for="check-6">1 1/3 cups brown sugar</label>
-			</li>	
-
-										
+			
 		</ul>
 
 
 		<!-- Directions -->
 		<h3>Directions</h3>
 		<ol class="directions" itemprop="recipeInstructions">
-			<li>Butter a 9x13 inch baking dish. Arrange the slices of bread in the bottom. In a large bowl, beat together eggs, milk, cream, vanilla and cinnamon. Pour over bread slices, cover, and refrigerate overnight.</li>
-			<li>Preheat oven to 350 degrees F (175 degrees C). In a small saucepan, combine butter, brown sugar and corn syrup; heat until bubbling. Pour over bread and egg mixture.</li>
-			<li>Bake in preheated oven, uncovered, for 40 minutes.</li>
-			
+			<li>Preheat oven to 375 degrees F (190 degrees C).</li> 
+			<li>Place eggs and cracker crumbs in two separate shallow bowls. Mix cracker crumbs with garlic salt and pepper. Dip chicken in the eggs, then dredge in the crumb mixture to coat.</li>
+			<li>Arrange coated chicken in a 9x13 inch baking dish. Place pieces of butter around the chicken.</li>
+			<li>Bake in the preheated oven for 40 minutes, or until chicken is no longer pink and juices run clear.</li>
+		
 		</ol>
 
 
@@ -184,7 +178,7 @@
 
 				<!-- Content -->
 				<div class="recipe-box-content">
-					<h3><a href="recipepage2servlet">Malvan Fish Curry</a></h3>
+					<h3><a href="recipepage2servlet">Malvani Fish Curry</a></h3>
 					
 					
 
@@ -218,11 +212,11 @@
 				
 				<!-- Content -->
 				<div class="recipe-box-content">
-					<h3><a href="recipepage2servlet">Shahi Egg Masala</a></h3>
+					<h3><a href="recipepage2servlet">Chunky Beef Stew</a></h3>
 					
 					
 
-					<div class="recipe-meta"><i class="fa fa-clock-o"></i> 45 min</div>
+					<div class="recipe-meta"><i class="fa fa-clock-o"></i>1 Hour 15 min</div>
 
 					<div class="clearfix"></div>
 				</div>
@@ -233,20 +227,7 @@
 
 		<div class="margin-top-15"></div>
 
-<h3 class="headline"><a href="#reviews" data-toggle="collapse">Reviews</a> <span class="comments-amount"></span></h3><span class="line"></span><div class="clearfix"></div>
-		
-			<!-- Reviews -->
-			<section class="comments collapse" id="reviews">
 
-				<ul id="commentlist">
-					
-
-					
-
-					
-				 </ul>
-
-			</section>
 		<!-- Comments
 		================================================== -->
 		
@@ -257,7 +238,7 @@
 		<!-- Add Comment
 		================================================== -->
 
-		<h3 class="headline">Add Review</h3><span class="line margin-bottom-35"></span><div class="clearfix"></div>
+		<<h3 class="headline">Add Review</h3><span class="line margin-bottom-35"></span><div class="clearfix"></div>
 		
 		<!-- Add Comment Form -->
 		<form id="add-review" class="add-comment">
@@ -280,7 +261,10 @@
 				</div>
 
 			<a href="#" class="button medium color" onclick="saveComments()">Add Review</a>
-			<div class="clearfix"></div>
+
+				
+
+			</fieldset>
 
 		</form>
 

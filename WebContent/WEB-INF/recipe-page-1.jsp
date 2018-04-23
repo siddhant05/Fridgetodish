@@ -82,24 +82,24 @@
 		<!-- Header -->
 		<section class="recipe-header">
 			<div class="title-alignment">
-				<h2>BBQ Chicken Legs</h2>
+				<h2>Spinach, Feta, and Sun-Dried Tomato Omelet</h2>
 			</div>
 		</section>
 		
 
 		<!-- Slider -->
 		<div class="recipeSlider rsDefault">
-		    <img itemprop="image" class="rsImg" src="resource/images/56389480_bbq-chicken-legs_1x1.jpg" alt="" />
+		    <img itemprop="image" class="rsImg" src="resource/images/Spinach, Feta, and Sun-Dried Tomato Omelet.jpg" alt="" />
 		</div>
 
 
 		<!-- Details -->
 		<section class="recipe-details" itemprop="nutrition">
 			<ul>
-				<li>Serves: <strong itemprop="recipeYield">4 people</strong></li>
-				<li>Prep Time: <strong itemprop="prepTime">30 Min</strong></li>
-				<li>Cooking: <strong itemprop="cookTime">45 Min</strong></li>
-				<li>Calories: <strong itemprop="calories">251 kcal</strong></li>
+				<li>Serves: <strong itemprop="recipeYield">1 person</strong></li>
+				<li>Prep Time: <strong itemprop="prepTime">5 Min</strong></li>
+				<li>Cooking: <strong itemprop="cookTime">5 Min</strong></li>
+				<li>Calories: <strong itemprop="calories">175 cal</strong></li>
 			</ul>
 			
 			<a href="#" id="bookmark_button" class="print" onclick="saveBookmarks()"><i class="fa fa-print"></i> Add to Bookmarks</a>
@@ -108,7 +108,7 @@
 
 
 		<!-- Text -->
-		<p itemprop="description">"A wonderful chicken recipe that can either be nice and gentle, or have a bit of a kick!"</p>
+		<p itemprop="description">"A wonderful egg recipe to start your day!"</p>
 
 
 		<!-- Ingredients -->
@@ -116,42 +116,37 @@
 		<ul class="ingredients" style="list-style-type:none;">
 			<li>
 				<input id="check-1" type="checkbox" name="check" value="check-1">
-				<label itemprop="ingredients" for="check-1">2 pounds chicken legs</label>
+				<label itemprop="ingredients" for="check-1">2 large eggs</label>
 			</li>
 
 			<li>
 				<input id="check-2" type="checkbox" name="check" value="check-2">
-				<label itemprop="ingredients" for="check-2">1 cup ketchup</label>
+				<label itemprop="ingredients" for="check-2">1⁄2 tablespoon unsalted butter</label>
 			</li>
 
 			<li>
 				<input id="check-3" type="checkbox" name="check" value="check-3">
-				<label itemprop="ingredients" for="check-3">2 tablespoons apple cider vinegar</label>
+				<label itemprop="ingredients" for="check-3">1⁄2 cup spinach, chopped</label>
 			</li>
 
 			<li>
 				<input id="check-4" type="checkbox" name="check" value="check-4">
-				<label itemprop="ingredients" for="check-4">2 garlic cloves, minced</label>
+				<label itemprop="ingredients" for="check-4">2 tablespoons sun-dried tomatoes packed in oil, chopped</label>
 			</li>
 
 			<li>
 				<input id="check-5" type="checkbox" name="check" value="check-5">
-				<label itemprop="ingredients" for="check-5">1 teaspoon paprika</label>
+				<label itemprop="ingredients" for="check-5">2 tablespoons feta, crumbled</label>
 			</li>
 
 			<li>
 				<input id="check-6" type="checkbox" name="check" value="check-6">
-				<label itemprop="ingredients" for="check-6">1/3 cup packed dark brown sugar</label>
+				<label itemprop="ingredients" for="check-6">kosher salt</label>
 			</li>	
 
 			<li>
 				<input id="check-7" type="checkbox" name="check" value="check-7">
-				<label itemprop="ingredients" for="check-7">2 tablespoons worcestershire sauce </label>
-			</li>	
-
-			<li>
-				<input id="check-8" type="checkbox" name="check" value="check-8">
-				<label itemprop="ingredients" for="check-8">1 teaspoon kosher salt</label>
+				<label itemprop="ingredients" for="check-7">black pepper</label>
 			</li>	
 										
 		</ul>
@@ -160,22 +155,17 @@
 		<!-- Directions -->
 		<h3>Directions</h3>
 		<ol class="directions" itemprop="recipeInstructions">
-			<li >In a small saucepan over medium heat, stir together all the ingredients. Bring to a boil, stirring frequently, reduce heat to low and simmer 2–3 minutes, until sauce has thickened.</li>
-			<li>Allow BBQ Sauce to cool, then store in an airtight container in the fridge until ready to use.</li>
-			<li>Preheat oven to 375F. Place the chicken legs in a large mixing bowl, sprinkle with the salt, and coat with 1/2 cup of the BBQ sauce, cover and marinate for 30 minutes in the fridge.</li>
-			<li>Place the chicken legs on a baking rack over a foil lined baking sheet, baste with extra BBQ sauce, if desired, and roast for 45 minutes.</li>
+			<li>In a medium bowl, beat the eggs with a pinch each of salt and pepper.</li>
+			<li>Melt the butter in a medium nonstick skillet over medium heat.</li>
+			<li>Add the eggs and cook, stirring and tilting the pan, until just set, 2 to 3 minutes.</li>
+			<li>Sprinkle with the spinach, sun-dried tomatoes, and Feta; fold the eggs over the filling.</li>
+			<li>Transfer to a plate and serve with toast or biscuit.</li>
 		</ol>
 
 
 		
 		<div class="clearfix"></div>
 
-		
-		<!-- Meta -->
-<!--  		<div class="post-meta">
-			By <a href="#" itemprop="author">Sandra Fortin</a>, on
-			<meta itemprop="datePublished" content="2014-30-10">30th November, 2014</meta>
-		</div>  -->
 
 
 		<div class="margin-bottom-40"></div>
@@ -368,14 +358,14 @@
 <script src="resource/scripts/jquery-migrate-1.2.1.min.js"></script>
 <script src="resource/scripts/jquery.superfish.js"></script>
 <script src="resource/scripts/jquery.royalslider.min.js"></script>
-
+<script src="resource/scripts/responsive-nav.js"></script>
 <script src="resource/scripts/hoverIntent.js"></script>
 <script src="resource/scripts/isotope.pkgd.min.js"></script>
 <script src="resource/scripts/chosen.jquery.min.js"></script>
 <script src="resource/scripts/jquery.tooltips.min.js"></script>
 <script src="resource/scripts/jquery.magnific-popup.min.js"></script>
 <script src="resource/scripts/jquery.pricefilter.js"></script>
-
+<script src="resource/scripts/custom.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

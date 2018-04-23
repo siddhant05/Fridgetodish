@@ -28,7 +28,6 @@
 	<script src="js/modernizr.js"></script>
 </head>
 
-<body>
 <body onload="setParametersinPage()">
 
 <!-- Wrapper -->
@@ -82,33 +81,33 @@
 		<!-- Header -->
 		<section class="recipe-header">
 			<div class="title-alignment">
-				<h2>Baked French Toast</h2>
+				<h2>Chunky Beef Stew</h2>
 			</div>
 		</section>
 		
 
 		<!-- Slider -->
 		<div class="recipeSlider rsDefault">
-		    <img itemprop="image" class="rsImg" src="resource/images/Baked French Toast.jpg" alt="" />
+		    <img itemprop="image" class="rsImg" src="resource/images/Beef Stew.jpg" alt="" />
 		</div>
 
 
 		<!-- Details -->
 		<section class="recipe-details" itemprop="nutrition">
 			<ul>
-				<li>Serves: <strong itemprop="recipeYield">12 people</strong></li>
+				<li>Serves: <strong itemprop="recipeYield">6 people</strong></li>
 				<li>Prep Time: <strong itemprop="prepTime">15 Min</strong></li>
-				<li>Cooking: <strong itemprop="cookTime">40 Min</strong></li>
-				<li>Calories: <strong itemprop="calories">395 cal</strong></li>
+				<li>Cooking: <strong itemprop="cookTime">1 Hour</strong></li>
+				<li>Calories: <strong itemprop="calories">150 kcal</strong></li>
 			</ul>
-			
 			<a href="#" id="bookmark_button" class="print" onclick="saveBookmarks()"><i class="fa fa-print"></i> Add to Bookmarks</a>
+			
 			<div class="clearfix"></div>
 		</section>
 
 
 		<!-- Text -->
-		<p itemprop="description">"Always a hit with guests. You may sprinkle the top with pecans if you wish."</p>
+		<p itemprop="description">A chunky beef stew made affordable with lots of vegetables and rice to soak up the rich sauce.</p>
 
 
 		<!-- Ingredients -->
@@ -116,45 +115,58 @@
 		<ul class="ingredients" style="list-style-type:none;">
 			<li>
 				<input id="check-1" type="checkbox" name="check" value="check-1">
-				<label itemprop="ingredients" for="check-1">1 pound loaf French bread, cut diagonally in 1 inch slices</label>
+				<label itemprop="ingredients" for="check-1">1 to 1 1/2 lbs. boneless stew meat</label>
 			</li>
 
 			<li>
 				<input id="check-2" type="checkbox" name="check" value="check-2">
-				<label itemprop="ingredients" for="check-2">8 eggs</label>
+				<label itemprop="ingredients" for="check-2">1/4 cup all-purpose flour</label>
 			</li>
 
 			<li>
 				<input id="check-3" type="checkbox" name="check" value="check-3">
-				<label itemprop="ingredients" for="check-3">2 cups milk</label>
+				<label itemprop="ingredients" for="check-3">2 Tbsp olive oil</label>
 			</li>
 
 			<li>
 				<input id="check-4" type="checkbox" name="check" value="check-4">
-				<label itemprop="ingredients" for="check-4">1 1/2 cups half-and-half cream</label>
+				<label itemprop="ingredients" for="check-4">1 medium onion</label>
 			</li>
 
 			<li>
 				<input id="check-5" type="checkbox" name="check" value="check-5">
-				<label itemprop="ingredients" for="check-5">3/4 cup butter</label>
+				<label itemprop="ingredients" for="check-5">4 cloves garlic</label>
 			</li>
 
 			<li>
 				<input id="check-6" type="checkbox" name="check" value="check-6">
-				<label itemprop="ingredients" for="check-6">1 1/3 cups brown sugar</label>
+				<label itemprop="ingredients" for="check-6">3 oz. tomato paste</label>
 			</li>	
 
-										
+			<li>
+				<input id="check-7" type="checkbox" name="check" value="check-7">
+				<label itemprop="ingredients" for="check-7">1 cup frozen peas</label>
+			</li>	
+
+			<li>
+				<input id="check-8" type="checkbox" name="check" value="check-8">
+				<label itemprop="ingredients" for="check-8">1/2 lb. about 3 carrots</label>
+			</li>	
+			<li>
+				<input id="check-9" type="checkbox" name="check" value="check-9">
+				<label itemprop="ingredients" for="check-9">1 lb. potatoes</label>
+			</li>			
+			
 		</ul>
 
 
 		<!-- Directions -->
 		<h3>Directions</h3>
 		<ol class="directions" itemprop="recipeInstructions">
-			<li>Butter a 9x13 inch baking dish. Arrange the slices of bread in the bottom. In a large bowl, beat together eggs, milk, cream, vanilla and cinnamon. Pour over bread slices, cover, and refrigerate overnight.</li>
-			<li>Preheat oven to 350 degrees F (175 degrees C). In a small saucepan, combine butter, brown sugar and corn syrup; heat until bubbling. Pour over bread and egg mixture.</li>
-			<li>Bake in preheated oven, uncovered, for 40 minutes.</li>
-			
+			<li>Cut the beef into smaller, bite-sized chunks. Add the beef and flour to a small bowl and toss the beef in the flour until it is well coated. Heat the olive oil in a large pot over medium heat. When it is hot, add about half of the beef chunks and cook until golden brown. Once browned, remove the beef, add the second batch, and cook until browned again. Try not to stir the beef as it is browning, that will make it take longer. Adding all of the beef at once will over crowd the pot and cause moisture to build up, which will also prevent browning. The beef does not have to be fully cooked at this point, just browned on the outside.</li>
+			<li>While the beef is browning, chop the onion into wedges and mince the garlic. After the beef has browned, add the onion and garlic to the pot, and saute it for 2-3 minutes. If the browned bits on the bottom of the pot become very dark or look like they will burn, move on to the next step immediately. The onions do not need to be fully cooked..</li>
+			<li>Add the tomato paste and beef broth to the pot. Stir the pot until all of the browned bits have dissolved off of the bottom. Return the browned beef to the pot and also add the bay leaf, thyme, rosemary, and a generous dose of freshly cracked pepper. Stir to combine. While the pot is simmering, peel and slice the carrots. Wash the potatoes well and cut them into 3/4 inch cubes. Once the pot has simmered for 30 minutes, add the carrots, potatoes, and peas. Cover the pot again and let simmer for another 15-20 minutes or until the vegetables are tender.</li>
+			<li>Stir the worcestershire sauce into the stew. Taste the stew and adjust salt and pepper if needed. Roughly chop a handful of parsley and sprinkle it over top. Serve hot.</li>
 		</ol>
 
 
@@ -184,7 +196,7 @@
 
 				<!-- Content -->
 				<div class="recipe-box-content">
-					<h3><a href="recipepage2servlet">Malvan Fish Curry</a></h3>
+					<h3><a href="recipepage2servlet">Malvani Fish Curry</a></h3>
 					
 					
 
@@ -233,20 +245,7 @@
 
 		<div class="margin-top-15"></div>
 
-<h3 class="headline"><a href="#reviews" data-toggle="collapse">Reviews</a> <span class="comments-amount"></span></h3><span class="line"></span><div class="clearfix"></div>
-		
-			<!-- Reviews -->
-			<section class="comments collapse" id="reviews">
 
-				<ul id="commentlist">
-					
-
-					
-
-					
-				 </ul>
-
-			</section>
 		<!-- Comments
 		================================================== -->
 		
@@ -280,7 +279,10 @@
 				</div>
 
 			<a href="#" class="button medium color" onclick="saveComments()">Add Review</a>
-			<div class="clearfix"></div>
+
+				
+
+			</fieldset>
 
 		</form>
 

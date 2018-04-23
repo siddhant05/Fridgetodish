@@ -82,24 +82,24 @@
 		<!-- Header -->
 		<section class="recipe-header">
 			<div class="title-alignment">
-				<h2>Baked French Toast</h2>
+				<h2>Poached Eggs</h2>
 			</div>
 		</section>
 		
 
 		<!-- Slider -->
 		<div class="recipeSlider rsDefault">
-		    <img itemprop="image" class="rsImg" src="resource/images/Baked French Toast.jpg" alt="" />
+		    <img itemprop="image" class="rsImg" src="resource/images/Poached Eggs.jpg" alt="" />
 		</div>
 
 
 		<!-- Details -->
 		<section class="recipe-details" itemprop="nutrition">
 			<ul>
-				<li>Serves: <strong itemprop="recipeYield">12 people</strong></li>
-				<li>Prep Time: <strong itemprop="prepTime">15 Min</strong></li>
-				<li>Cooking: <strong itemprop="cookTime">40 Min</strong></li>
-				<li>Calories: <strong itemprop="calories">395 cal</strong></li>
+				<li>Serves: <strong itemprop="recipeYield">1 person</strong></li>
+				<li>Prep Time: <strong itemprop="prepTime">5 Min</strong></li>
+				<li>Cooking: <strong itemprop="cookTime">4 Min</strong></li>
+				<li>Calories: <strong itemprop="calories">70 cal</strong></li>
 			</ul>
 			
 			<a href="#" id="bookmark_button" class="print" onclick="saveBookmarks()"><i class="fa fa-print"></i> Add to Bookmarks</a>
@@ -108,7 +108,7 @@
 
 
 		<!-- Text -->
-		<p itemprop="description">"Always a hit with guests. You may sprinkle the top with pecans if you wish."</p>
+		<p itemprop="description">"How to poach an egg, with great results every time. It's easy!"</p>
 
 
 		<!-- Ingredients -->
@@ -116,33 +116,9 @@
 		<ul class="ingredients" style="list-style-type:none;">
 			<li>
 				<input id="check-1" type="checkbox" name="check" value="check-1">
-				<label itemprop="ingredients" for="check-1">1 pound loaf French bread, cut diagonally in 1 inch slices</label>
+				<label itemprop="ingredients" for="check-1">Fresh Eggs</label>
 			</li>
-
-			<li>
-				<input id="check-2" type="checkbox" name="check" value="check-2">
-				<label itemprop="ingredients" for="check-2">8 eggs</label>
-			</li>
-
-			<li>
-				<input id="check-3" type="checkbox" name="check" value="check-3">
-				<label itemprop="ingredients" for="check-3">2 cups milk</label>
-			</li>
-
-			<li>
-				<input id="check-4" type="checkbox" name="check" value="check-4">
-				<label itemprop="ingredients" for="check-4">1 1/2 cups half-and-half cream</label>
-			</li>
-
-			<li>
-				<input id="check-5" type="checkbox" name="check" value="check-5">
-				<label itemprop="ingredients" for="check-5">3/4 cup butter</label>
-			</li>
-
-			<li>
-				<input id="check-6" type="checkbox" name="check" value="check-6">
-				<label itemprop="ingredients" for="check-6">1 1/3 cups brown sugar</label>
-			</li>	
+	
 
 										
 		</ul>
@@ -151,9 +127,9 @@
 		<!-- Directions -->
 		<h3>Directions</h3>
 		<ol class="directions" itemprop="recipeInstructions">
-			<li>Butter a 9x13 inch baking dish. Arrange the slices of bread in the bottom. In a large bowl, beat together eggs, milk, cream, vanilla and cinnamon. Pour over bread slices, cover, and refrigerate overnight.</li>
-			<li>Preheat oven to 350 degrees F (175 degrees C). In a small saucepan, combine butter, brown sugar and corn syrup; heat until bubbling. Pour over bread and egg mixture.</li>
-			<li>Bake in preheated oven, uncovered, for 40 minutes.</li>
+			<li>Heat water to a bare simmer: Fill a saucepan with a couple inches of water. Heat the water on high until it reaches a bare simmer and bubbles start appearing at the bottom of the pan, or bring the water to a boil and then lower the heat until the water is at a bare simmer (just a few bubbles coming up now and then).</li>
+			<li>Crack egg into a small bowl and gently slip it into the water: Working with the eggs one at a time, crack the egg into a small bowl or cup. Place the bowl close to the surface of the hot water and gently slip the egg into the water.</li>
+			<li>Turn off heat, cover pan, set timer for 4 minutes: Turn off the heat and cover the pan. Set a timer for 4 minutes (or count out loud to 60, four times). At this point the egg whites should be completely cooked, while the egg yolks are still runny.</li>
 			
 		</ol>
 

@@ -28,9 +28,7 @@
 	<script src="js/modernizr.js"></script>
 </head>
 
-<body>
 <body onload="setParametersinPage()">
-
 <!-- Wrapper -->
 <div id="wrapper">
 
@@ -82,33 +80,33 @@
 		<!-- Header -->
 		<section class="recipe-header">
 			<div class="title-alignment">
-				<h2>Baked French Toast</h2>
+				<h2>Fish Curry</h2>
 			</div>
 		</section>
 		
 
 		<!-- Slider -->
 		<div class="recipeSlider rsDefault">
-		    <img itemprop="image" class="rsImg" src="resource/images/Baked French Toast.jpg" alt="" />
+		    <img itemprop="image" class="rsImg" src="resource/images/Malvani_Curry.jpg" alt="" />
 		</div>
 
 
 		<!-- Details -->
 		<section class="recipe-details" itemprop="nutrition">
 			<ul>
-				<li>Serves: <strong itemprop="recipeYield">12 people</strong></li>
-				<li>Prep Time: <strong itemprop="prepTime">15 Min</strong></li>
-				<li>Cooking: <strong itemprop="cookTime">40 Min</strong></li>
-				<li>Calories: <strong itemprop="calories">395 cal</strong></li>
+				<li>Serves: <strong itemprop="recipeYield">4 people</strong></li>
+				<li>Prep Time: <strong itemprop="prepTime">30 Min</strong></li>
+				<li>Cooking: <strong itemprop="cookTime">30 Min</strong></li>
+				<li>Calories: <strong itemprop="calories">230 kcal</strong></li>
 			</ul>
-			
 			<a href="#" id="bookmark_button" class="print" onclick="saveBookmarks()"><i class="fa fa-print"></i> Add to Bookmarks</a>
+			
 			<div class="clearfix"></div>
 		</section>
 
 
 		<!-- Text -->
-		<p itemprop="description">"Always a hit with guests. You may sprinkle the top with pecans if you wish."</p>
+		<p itemprop="description">A fish curry with loads of punch to it, which is just one of the reasons you will go back for a second helping.</p>
 
 
 		<!-- Ingredients -->
@@ -116,45 +114,58 @@
 		<ul class="ingredients" style="list-style-type:none;">
 			<li>
 				<input id="check-1" type="checkbox" name="check" value="check-1">
-				<label itemprop="ingredients" for="check-1">1 pound loaf French bread, cut diagonally in 1 inch slices</label>
+				<label itemprop="ingredients" for="check-1">1 pound (500 grams) whole surmai (kingfish), pomfret, or mackerel</label>
 			</li>
 
 			<li>
 				<input id="check-2" type="checkbox" name="check" value="check-2">
-				<label itemprop="ingredients" for="check-2">8 eggs</label>
+				<label itemprop="ingredients" for="check-2">1 tablespoon freshly squeezed lemon juice</label>
 			</li>
 
 			<li>
 				<input id="check-3" type="checkbox" name="check" value="check-3">
-				<label itemprop="ingredients" for="check-3">2 cups milk</label>
+				<label itemprop="ingredients" for="check-3">1 teaspoon ground turmeric</label>
 			</li>
 
 			<li>
 				<input id="check-4" type="checkbox" name="check" value="check-4">
-				<label itemprop="ingredients" for="check-4">1 1/2 cups half-and-half cream</label>
+				<label itemprop="ingredients" for="check-4">1 teaspoon table salt</label>
 			</li>
 
 			<li>
 				<input id="check-5" type="checkbox" name="check" value="check-5">
-				<label itemprop="ingredients" for="check-5">3/4 cup butter</label>
+				<label itemprop="ingredients" for="check-5">1 teaspoon cumin seeds</label>
 			</li>
 
 			<li>
 				<input id="check-6" type="checkbox" name="check" value="check-6">
-				<label itemprop="ingredients" for="check-6">1 1/3 cups brown sugar</label>
+				<label itemprop="ingredients" for="check-6">4 or 5 dried red chiles, stemmed</label>
 			</li>	
 
-										
+			<li>
+				<input id="check-7" type="checkbox" name="check" value="check-7">
+				<label itemprop="ingredients" for="check-7">2 medium onions, chopped</label>
+			</li>	
+
+			<li>
+				<input id="check-8" type="checkbox" name="check" value="check-8">
+				<label itemprop="ingredients" for="check-8">2 tablespoons vegetable oil</label>
+			</li>	
+			<li>
+				<input id="check-9" type="checkbox" name="check" value="check-9">
+				<label itemprop="ingredients" for="check-9">1 medium tomato, chopped</label>
+			</li>			
+			
 		</ul>
 
 
 		<!-- Directions -->
 		<h3>Directions</h3>
 		<ol class="directions" itemprop="recipeInstructions">
-			<li>Butter a 9x13 inch baking dish. Arrange the slices of bread in the bottom. In a large bowl, beat together eggs, milk, cream, vanilla and cinnamon. Pour over bread slices, cover, and refrigerate overnight.</li>
-			<li>Preheat oven to 350 degrees F (175 degrees C). In a small saucepan, combine butter, brown sugar and corn syrup; heat until bubbling. Pour over bread and egg mixture.</li>
-			<li>Bake in preheated oven, uncovered, for 40 minutes.</li>
-			
+			<li>Cut off the head of the fish and clean the insides. Wash thoroughly under running water. Cut the fish horizontally into 1-inch-thick (2½-cm-thick) slices and put in a bowl. Add the lemon juice, ½ teaspoon of the turmeric, and the salt, and stir well. Cover the bowl and put it in the refrigerator for 15 to 20 minutes to marinate.</li>
+			<li>Place a small nonstick sauté pan over medium heat. Add the cumin and coriander, and dry-roast for 2 minutes or until fragrant.</li>
+			<li>Let cool, then transfer to a food processor with the dried chiles, the remaining ½ teaspoon turmeric, the coconut, half of the onions, the peppercorns, tamarind pulp, and 1 cup (200 ml) water, and process to a smooth paste.</li>
+			<li>Place a medium nonstick saucepan over medium heat and add the oil. When small bubbles appear at the bottom of the pan, add the remaining onion and sauté for 3 to 4 minutes or until lightly browned. Add the tomato and green chiles and sauté for 2 to 3 minutes or until the oil comes to the top. Add the coconut paste and cook over high heat for 1 minute. Add 1½ cups (300 ml) water and bring to a boil. Lower the heat to medium, add the marinated fish, and cook for 5 to 6 minutes or until the fish is cooked through. Transfer to a serving bowl and serve hot.</li>
 		</ol>
 
 
@@ -184,11 +195,11 @@
 
 				<!-- Content -->
 				<div class="recipe-box-content">
-					<h3><a href="recipepage2servlet">Malvan Fish Curry</a></h3>
+					<h3><a href="recipepage2servlet">BBQ Chicken Legs</a></h3>
 					
 					
 
-					<div class="recipe-meta"><i class="fa fa-clock-o"></i> 45 min</div>
+					<div class="recipe-meta"><i class="fa fa-clock-o"></i>1 Hour 15 min</div>
 
 					<div class="clearfix"></div>
 				</div>
@@ -233,20 +244,7 @@
 
 		<div class="margin-top-15"></div>
 
-<h3 class="headline"><a href="#reviews" data-toggle="collapse">Reviews</a> <span class="comments-amount"></span></h3><span class="line"></span><div class="clearfix"></div>
-		
-			<!-- Reviews -->
-			<section class="comments collapse" id="reviews">
 
-				<ul id="commentlist">
-					
-
-					
-
-					
-				 </ul>
-
-			</section>
 		<!-- Comments
 		================================================== -->
 		
@@ -280,7 +278,12 @@
 				</div>
 
 			<a href="#" class="button medium color" onclick="saveComments()">Add Review</a>
-			<div class="clearfix"></div>
+
+				
+
+			</fieldset>
+
+			
 
 		</form>
 

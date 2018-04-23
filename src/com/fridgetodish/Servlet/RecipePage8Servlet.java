@@ -20,14 +20,13 @@ import com.fridgetodish.Action.DBConnection;
 import com.fridgetodish.Pojo.User;
 
  
-@WebServlet(value="/RecipePage1Servlet")
-public class RecipePage1Servlet extends HttpServlet {  
+@WebServlet(value="/RecipePage8Servlet")
+public class RecipePage8Servlet extends HttpServlet {  
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	//private static final Logger LOGGER = Logger.getLogger(SignInServlet.class);
-	//private static final long serialVersionUID = 1L;
+	
 
 		protected void doPost(HttpServletRequest request, HttpServletResponse response)  
 	                    throws ServletException, IOException {  
@@ -36,7 +35,7 @@ public class RecipePage1Servlet extends HttpServlet {
 					try{
 						String lRecipeID=request.getParameter("recipe");
 						request.setAttribute("recipeid", lRecipeID);
-						RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/recipe-page-1.jsp");
+						RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/recipe-page-8.jsp");
 		        		    rd.forward(request, response);
 		        			
 							
