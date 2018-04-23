@@ -208,3 +208,29 @@ function findbookmarks(){
 
 	
 }
+function saveuserrecipes(){
+
+var lRecipeid;
+var lRecipeTitle=jQuery("#recipe_title").val();
+var lSummary=lRecipeTitle;
+
+	jQuery
+			.ajax({
+				type : "POST",
+				url : "SaveUserRecipeServlet",
+				contentType : "application/x-www-form-urlencoded; charset=UTF-8",
+				data : {
+					'recipe_title' : lRecipeTitle,
+					'summary' : lSummary,
+					
+				},
+				success : function(responseText) {
+					var lData=responseText;
+					alert ("Recipe Saved Successfully");
+				}
+
+			});
+
+
+	
+}

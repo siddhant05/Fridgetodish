@@ -152,7 +152,6 @@ body {
   <button class="tablinks" onclick="openCity(event, 'About Me')" id="defaultOpen">About Me</button>
   <button class="tablinks" onclick="openCity(event, 'My Bookmarks')">My Bookmarks</button>
   
-  <button class="tablinks" onclick="openCity(event, 'My Uploaded Dishes')">My Uploaded Dishes</button>
   
 </div>
 

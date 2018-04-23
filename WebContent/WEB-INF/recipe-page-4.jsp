@@ -50,7 +50,7 @@
 
 	   	<nav id="main-nav-wrap">
 				<ul class="main-navigation">
-					<li class="highlight with-sep"><a href="LoadDataForHome" title="">Home</a></li>
+					<li class="highlight with-sep"><a href="BrowseRecipeServlet" title="">Browse Recipes</a></li>
 					<li><a class="smoothscroll"  href="UserProfileServlet" title="">Profile</a></li>
 					<li><a class=""  href="LogoutServlet" title="">Logout</a></li>									
 									

@@ -11,17 +11,22 @@
 	<link href="//fonts.googleapis.com/css?family=Sansita:400,400i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 <!--//online_fonts-->
-	<link href="resource/css/style_1.css" rel='stylesheet' type='text/css' media="all" /><!--stylesheet-->
+	
+	<link href="resource/css/style_1.css" rel='stylesheet' type='text/css' media="all" />
+	
+	
 	<script type="text/javascript">
 	setTimeout(function(){
 		$('#messagebox').fadeOut('slow');
 	}, 18000);
 	</script>
+
 </head>
 <body>
 
 <!-- header 
    ================================================== -->
+<header>
 <div class="row">
 	<div class="logo">
     <a href="index.html"></a>
@@ -36,7 +41,7 @@
 				</ul>
 				</form>
 </nav>
-
+</header>
 <h1>Welcome Foodies!</h1>
 <div class="form-w3ls">
 	<div class="form-head-w3l">
@@ -118,8 +123,38 @@
 			</form>
 		</div> 
     </div><!-- tab-content -->
-</div> <!-- /form -->	  
-<p class="copyright">&copy;Developed by Team#26</p>
+    
+</div> <!-- /form -->
+
+<!-- footer
+   ================================================== -->
+   <footer>
+
+
+
+
+      <div class="footer-bottom">
+
+      	<div class="row">
+
+      		<div class="col-twelve">
+	      		<div class="copyright">
+		         	<span>Copyright@fridgetodish.com</span> 
+		         	<span>Design by <a href="#">Team 26</a></span>		         	
+		         </div>
+
+		         <div id="go-top" style="display: block;">
+		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon ion-android-arrow-up"></i></a>
+		         </div>         
+	      	</div>
+
+      	</div> <!-- /footer-bottom -->     	
+
+      </div>
+
+   </footer>  
+	  
+
 <!-- js files -->
 <script src='resource/js/jquery.min.js'></script>
 <script src="resource/js/index.js"></script>

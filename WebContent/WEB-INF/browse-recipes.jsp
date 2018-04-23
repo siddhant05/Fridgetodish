@@ -10,7 +10,7 @@
 <!-- Basic Page Needs
 ================================================== -->
 <meta charset="utf-8">
-<title>Chow</title>
+<title>Browse Recipes</title>
 
 <!-- Mobile Specific Metas
 ================================================== -->
@@ -264,79 +264,14 @@
 <!-- Wrapper / End -->
 <!-- Footer
 ================================================== -->
-<div id="footer">
-
-	<!-- Container -->
-	<div class="container">
-
-		<div class="five columns">
-			<!-- Headline -->
-			<h3 class="headline footer">About</h3>
-			<span class="line"></span>
-			<div class="clearfix"></div>
-			<p>Cras at ultrices erat, sed vulputate eros. Nunc at augue gravida est fermentum vulputate. Pellentesque et ipsum in dui malesuada tempus.</p>
-		</div>
-
-		<div class="three columns">
-
-			<!-- Headline -->
-			<h3 class="headline footer">Archives</h3>
-			<span class="line"></span>
-			<div class="clearfix"></div>
-
-			<ul class="footer-links">
-				<li><a href="#">June 2014</a></li>
-				<li><a href="#">July 2014</a></li>
-				<li><a href="#">August 2014</a></li>
-				<li><a href="#">September 2014</a></li>
-				<li><a href="#">November 2014</a></li>
-			</ul>
-
-		</div>
-
-		<div class="three columns">
-
-			<!-- Headline -->
-			<h3 class="headline footer">Recipes</h3>
-			<span class="line"></span>
-			<div class="clearfix"></div>
-
-			<ul class="footer-links">
-				<li><a href="browse-recipes.html">Browse Recipes</a></li>
-				<li><a href="recipe-page-1.html">Recipe Page</a></li>
-				<li><a href="submit-recipe.html">Submit Recipe</a></li>
-			</ul>
-
-		</div>
-
-		<div class="five columns">
-
-			<!-- Headline -->
-			<h3 class="headline footer">Newsletter</h3>
-			<span class="line"></span>
-			<div class="clearfix"></div>
-			<p>Sign up to receive email updates on new product announcements, gift ideas, sales and more.</p>
-
-			<form action="#" method="get">
-				<input class="newsletter" type="text" placeholder="mail@example.com" value=""/>
-				<button class="newsletter-btn" type="submit">Subscribe</button>
-
-			</form>
-		</div>
-
-	</div>
-	<!-- Container / End -->
-
-</div>
-<!-- Footer / End -->
 
 <!-- Footer Bottom / Start -->
 <div id="footer-bottom">
 
 	<!-- Container -->
-	<div class="container">
+	<div class="container" align="center">
 
-		<div class="eight columns">© Copyright 2018 by Team 26. All Rights Reserved.</div>
+		<div class="eight columns" align="center">© Copyright 2018 by Team 26. All Rights Reserved.</div>
 
 	</div>
 	<!-- Container / End -->
@@ -366,40 +301,6 @@
 <script src="resource/js/index.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script>
 
-
-<!-- Style Switcher
-================================================== -->
-<script src="scripts/switcher.js"></script>
-
-<div id="style-switcher">
-	<h2>Style Switcher <a href="#"></a></h2>
-	
-	<div>
-		<h3>Predefined Colors</h3>
-		<ul class="colors" id="color1">
-			<li><a href="#" class="green" title="Green"></a></li>
-			<li><a href="#" class="blue" title="Blue"></a></li>
-			<li><a href="#" class="orange" title="Orange"></a></li>
-			<li><a href="#" class="navy" title="Navy"></a></li>
-			<li><a href="#" class="yellow" title="Yellow"></a></li>
-			<li><a href="#" class="peach" title="Peach"></a></li>
-			<li><a href="#" class="beige" title="Beige"></a></li>
-			<li><a href="#" class="purple" title="Purple"></a></li>
-			<li><a href="#" class="celadon" title="Celadon"></a></li>
-			<li><a href="#" class="pink" title="Pink"></a></li>
-			<li><a href="#" class="red" title="Red"></a></li>
-			<li><a href="#" class="brown" title="Brown"></a></li>
-			<li><a href="#" class="cherry" title="Cherry"></a></li>
-			<li><a href="#" class="cyan" title="Cyan"></a></li>
-			<li><a href="#" class="gray" title="Gray"></a></li>
-			<li><a href="#" class="darkcol" title="Dark"></a></li>
-		</ul>
-		
-	</div>
-	
-	<div id="reset"><a href="#" class="button color">Reset</a></div>
-		
-</div>
 
 
 <script>
