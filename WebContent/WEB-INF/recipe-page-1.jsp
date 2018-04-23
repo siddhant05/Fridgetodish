@@ -368,14 +368,14 @@
 <script src="resource/scripts/jquery-migrate-1.2.1.min.js"></script>
 <script src="resource/scripts/jquery.superfish.js"></script>
 <script src="resource/scripts/jquery.royalslider.min.js"></script>
-<script src="resource/scripts/responsive-nav.js"></script>
+
 <script src="resource/scripts/hoverIntent.js"></script>
 <script src="resource/scripts/isotope.pkgd.min.js"></script>
 <script src="resource/scripts/chosen.jquery.min.js"></script>
 <script src="resource/scripts/jquery.tooltips.min.js"></script>
 <script src="resource/scripts/jquery.magnific-popup.min.js"></script>
 <script src="resource/scripts/jquery.pricefilter.js"></script>
-<script src="resource/scripts/custom.js"></script>
+
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

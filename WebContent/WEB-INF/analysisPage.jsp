@@ -54,8 +54,7 @@
 <link href="resource/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 #wrapper {
-	/* background: RGBA(24, 161, 196, 0.2); */
-	/* background: url('/CAT-APP-PROJECT/resources/images/bgLight.jpg') repeat */
+
 		center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -72,6 +71,7 @@
 
 }
 </style>
+
 <script type="text/javascript">
 
 </script>

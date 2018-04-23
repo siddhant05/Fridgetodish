@@ -27,8 +27,13 @@ import com.fridgetodish.Pojo.User;
 @WebServlet(value="/SignInServlet")
 public class SignInServlet extends HttpServlet {  
 	/**
-	 * 
-	 */
+	* This class is used for validating users and rendering browse recipe page from login.
+	*
+	* @author  Siddant Mohanty
+	* @version 1.0
+	* @since   2018-03-10 
+	*/
+	
 	private static final long serialVersionUID = 1L;
 	//private static final Logger LOGGER = Logger.getLogger(SignInServlet.class);
 	//private static final long serialVersionUID = 1L;

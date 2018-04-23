@@ -143,7 +143,6 @@
 	</div>
 </div>
 
-
 <div class="margin-top-35"></div>
 
 
@@ -152,7 +151,7 @@
 
 	<!-- Headline -->
 	<div class="sixteen columns">
- 		<h3 class="headline">Top Recipes of the month.</h3>
+ 		<h3 class="headline">Top Recipes</h3>
 		<span class="line margin-bottom-35"></span>
 		<div class="clearfix"></div>
 	</div>
@@ -162,24 +161,107 @@
 		<!-- Isotope -->
 		<div id="recipelist" class="isotope">
 
+			<!-- Recipe #1 -->
+			<div class="four isotope-box columns">
 
-		</div>
+				<!-- Thumbnail -->
+				<div class="thumbnail-holder">
+					<a href="RecipePage12Servlet">
+						<img src="resource/images/recipeThumb-08.jpg" alt=""/>
+						<div class="hover-cover"></div>
+						<div class="hover-icon">View Recipe</div>
+					</a>
+				</div>
 
-		
- 
- 		<div class="clearfix"></div>
+				<!-- Content -->
+				<div class="recipe-box-content">
+					<h3><a href="RecipePage12Servlet">Shahi Egg <br> Masala</a></h3>
+
+					
+
+					<div class="recipe-meta"><i class="fa fa-clock-o"></i> 30 min</div>
+
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+			<!-- Recipe #2 -->
+			<div class="four isotope-box columns">
+
+				<!-- Thumbnail -->
+				<div class="thumbnail-holder">
+					<a href="RecipePage15Servlet">
+						<img src="resource/images/recipeThumb-06.jpg" alt=""/>
+						<div class="hover-cover"></div>
+						<div class="hover-icon">View Recipe</div>
+					</a>
+				</div>
+
+				<!-- Content -->
+				<div class="recipe-box-content">
+					<h3><a href="RecipePage15Servlet">BBQ Chicken Legs</a></h3>
 
 
-		<!-- Pagination -->
-		
+					<div class="recipe-meta"><i class="fa fa-clock-o"></i>45 min</div>
+
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+			<!-- Recipe #3 -->
+			<div class="four isotope-box columns">
+
+				<!-- Thumbnail -->
+				<div class="thumbnail-holder">
+					<a href="RecipePage13Servlet">
+						<img src="resource/images/recipeThumb-09.jpg" alt=""/>
+						<div class="hover-cover"></div>
+						<div class="hover-icon">View Recipe</div>
+					</a>
+				</div>
+
+				<!-- Content -->
+				<div class="recipe-box-content">
+					<h3><a href="RecipePage13Servlet">Chunky Beef </br> Stew</a></h3>
+
+				
+
+					<div class="recipe-meta"><i class="fa fa-clock-o"></i> 2 hr 30 min</div>
+
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+			<!-- Recipe #4 -->
+			<div class="four isotope-box columns">
+
+				<!-- Thumbnail -->
+				<div class="thumbnail-holder">
+					<a href="RecipePage4Servlet">
+						<img src="resource/images/recipeThumb-01.jpg" alt=""/>
+						<div class="hover-cover"></div>
+						<div class="hover-icon">View Recipe</div>
+					</a>
+				</div>
+
+				<!-- Content -->
+				<div class="recipe-box-content">
+					<h3><a href="RecipePage4Servlet">Chicken Tikka Masala</a></h3>
+
+				
+					<div class="recipe-meta"><i class="fa fa-clock-o"></i> 30 min</div>
+
+					<div class="clearfix"></div>
+				</div>
+			</div>
+
+			
 
 </div>
 
 
 </div>
 <!-- Wrapper / End -->
-
-
 <!-- Footer
 ================================================== -->
 <div id="footer">

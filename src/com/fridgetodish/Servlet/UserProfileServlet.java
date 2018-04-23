@@ -18,8 +18,13 @@ import com.fridgetodish.Action.DBConnection;
 @WebServlet(value="/UserProfileServlet")
 public class UserProfileServlet extends HttpServlet {  
 	/**
-	 * 
-	 */
+	* This class is used for fetching user profile page.
+	*
+	* @author  Siddant Mohanty
+	* @version 1.0
+	* @since   2018-03-10 
+	*/
+	
 	private static final long serialVersionUID = 1L;
 	//private static final Logger LOGGER = Logger.getLogger(LoginServlet.class);
 	//private static final long serialVersionUID = 1L;

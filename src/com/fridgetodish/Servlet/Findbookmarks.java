@@ -21,11 +21,16 @@ import com.fridgetodish.Pojo.User;
 @WebServlet(value="/Findbookmarks")
 public class Findbookmarks extends HttpServlet {  
 	/**
-	 * 
-	 */
+	* This class is used for finding recipe page.
+	*
+	* @author  Siddant Mohanty
+	* @version 1.0
+	* @since   2018-03-10 
+	*/
+	
 	private static final long serialVersionUID = 1L;
 	
-	//private static final long serialVersionUID = 1L;
+	
 
 		protected void doPost(HttpServletRequest request, HttpServletResponse response)  
 	                    throws ServletException, IOException {    

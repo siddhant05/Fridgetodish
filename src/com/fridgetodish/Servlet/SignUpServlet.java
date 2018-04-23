@@ -20,8 +20,13 @@ import com.fridgetodish.Action.DBConnection;
 @WebServlet(value="/SignUpServlet")
 public class SignUpServlet extends HttpServlet {  
 	/**
-	 * 
-	 */
+	* This class is used for user registration server side code.
+	*
+	* @author  Siddant Mohanty
+	* @version 1.0
+	* @since   2018-03-10 
+	*/
+	
 	private static final long serialVersionUID = 1L;
 	
 	//private static final long serialVersionUID = 1L;

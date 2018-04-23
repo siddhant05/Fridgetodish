@@ -1,5 +1,16 @@
 package com.fridgetodish.Pojo;
 
+/**
+* This class provides object class for users.
+*
+* @author  Siddant Mohanty
+* @version 1.0
+* @since   2018-03-10 
+*/
+
+
+
+
 public class User{
 	
 	

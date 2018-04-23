@@ -22,17 +22,22 @@ import com.fridgetodish.Action.DBConnection;
 @WebServlet(value="/FetchRecipesServlet")
 public class FetchRecipesServlet extends HttpServlet {  
 	/**
-	 * 
-	 */
+	* This class is used for fetching recipe page.
+	*
+	* @author  Siddant Mohanty
+	* @version 1.0
+	* @since   2018-03-10 
+	*/
+	
 	private static final long serialVersionUID = 1L;
 	private static final Logger LOGGER = Logger.getLogger(FetchRecipesServlet.class);
-	//private static final long serialVersionUID = 1L;
+	
 
 		protected void doGet(HttpServletRequest request, HttpServletResponse response)  
 	                    throws ServletException, IOException {    
 			
 			Connection lConn=null;
-			//LinkedHashMap<String, String> lRecipeMap = new LinkedHashMap<String, String>();
+			
 			PreparedStatement lPstmt 					   = null;
 			ResultSet lRst   							   = null;
 			try{

@@ -1,3 +1,13 @@
+/**
+	* This function is used to send fetch and save requests for saving comments.
+	*
+	* @author  Siddant Mohanty
+	* @version 1.0
+	* @since   2018-03-10 
+	*/
+	
+
+
 function saveComments(){
 
 	var lRecipeid;
@@ -46,6 +56,15 @@ function saveComments(){
 
 
 }
+
+/**
+* This function is used to set paramter in recipe page.
+*
+* @author  Siddant Mohanty
+* @version 1.0
+* @since   2018-03-10 
+*/
+
 function setParametersinPage(){
 	
 	var lRecipeid;
@@ -96,6 +115,15 @@ function setParametersinPage(){
 	
 }
 
+/**
+* This function is used to send bookmark save ajax request to servlet.
+*
+* @author  Siddant Mohanty
+* @version 1.0
+* @since   2018-03-10 
+*/
+
+
 function saveBookmarks(){
 
 	var lRecipeid;
@@ -122,6 +150,15 @@ function saveBookmarks(){
 	
 
 }
+
+/**
+* This function is used to send bookmark load ajax request to servlet.
+*
+* @author  Siddant Mohanty
+* @version 1.0
+* @since   2018-03-10 
+*/
+
 function findbookmarks(){
 	var lCombinedHTML="";
 	jQuery

@@ -17,7 +17,14 @@ import javax.servlet.http.HttpServletResponse;
 import com.fridgetodish.Action.DBConnection;
 import com.fridgetodish.Pojo.User;
 
- 
+/**
+* This class is used for fetching comments from database.
+*
+* @author  Siddant Mohanty
+* @version 1.0
+* @since   2018-03-10 
+*/
+
 @WebServlet(value="/FindCommentsServlet")
 public class FindCommentsServlet extends HttpServlet {  
 	/**

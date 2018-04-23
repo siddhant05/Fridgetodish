@@ -14,8 +14,13 @@ import javax.servlet.http.HttpSession;
 @WebServlet(value="/LogoutServlet")
 public class LogoutServlet extends HttpServlet {  
 	/**
-	 * 
-	 */
+	* This class is used for logging out from session.
+	*
+	* @author  Siddant Mohanty
+	* @version 1.0
+	* @since   2018-03-10 
+	*/
+	
 	private static final long serialVersionUID = 1L;
 	//private static final Logger LOGGER = Logger.getLogger(LogoutServlet.class);
 	//private static final long serialVersionUID = 1L;

@@ -23,12 +23,15 @@ import com.fridgetodish.Pojo.User;
 @WebServlet(value="/RecipePageServlet1")
 public class RecipePageServlet1 extends HttpServlet {  
 	/**
-	 * 
-	 */
+	* This class is used for fetching individual recipe page.
+	*
+	* @author  Siddant Mohanty
+	* @version 1.0
+	* @since   2018-03-10 
+	*/
+	
 	private static final long serialVersionUID = 1L;
-	//private static final Logger LOGGER = Logger.getLogger(SignInServlet.class);
-	//private static final long serialVersionUID = 1L;
-
+	
 		protected void doPost(HttpServletRequest request, HttpServletResponse response)  
 	                    throws ServletException, IOException {  
 			
@@ -39,10 +42,6 @@ public class RecipePageServlet1 extends HttpServlet {
 						RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/recipe-page-1.jsp");
 		        		    rd.forward(request, response);
 		        			
-							
-						
-						
-						
 					}catch(Exception e){
 						System.out.println("There is an error in upload,"+e.getMessage());
 					}		      

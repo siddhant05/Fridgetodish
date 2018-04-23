@@ -20,8 +20,13 @@ import com.fridgetodish.Pojo.User;
 @WebServlet(value="/SaveBookmarks")
 public class SaveBookmarks extends HttpServlet {  
 	/**
-	 * 
-	 */
+	* This class is used for saving bookmarks.
+	*
+	* @author  Siddant Mohanty
+	* @version 1.0
+	* @since   2018-03-10 
+	*/
+	
 	private static final long serialVersionUID = 1L;
 	
 	//private static final long serialVersionUID = 1L;

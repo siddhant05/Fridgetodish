@@ -135,6 +135,15 @@ $('.tab a,.links a').on('click', function (e) {
 
     });
     
+    /**
+	* This function is used to send recipe load ajax request to servlet.
+	*
+	* @author  Siddant Mohanty
+	* @version 1.0
+	* @since   2018-03-10 
+	*/
+	
+    
     function ajaxforRecipeLoad(){
 
   

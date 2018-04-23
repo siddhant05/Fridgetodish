@@ -14,8 +14,12 @@ import javax.servlet.http.HttpServletResponse;
 
 
 /**
- * Servlet implementation class LoadDataForHome
- */
+* This class fetches welcome page for website.
+*
+* @author  Siddant Mohanty
+* @version 1.0
+* @since   2018-03-10 
+*/
 @WebServlet("/LoadDataForHome")
 public class LoadDataForHome extends HttpServlet {
 	

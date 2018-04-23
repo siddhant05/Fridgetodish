@@ -17,20 +17,23 @@ import com.fridgetodish.Action.CommonMethods;
 
 import com.fridgetodish.Action.DBConnection;
 
- 
+/**
+* This class is used for rendering browse recipe page.
+*
+* @author  Siddant Mohanty
+* @version 1.0
+* @since   2018-03-10 
+*/
 @WebServlet(value="/BrowseRecipeServlet")
 public class BrowseRecipeServlet extends HttpServlet {  
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	//private static final Logger LOGGER = Logger.getLogger(LoginServlet.class);
-	//private static final long serialVersionUID = 1L;
-
+	
 		protected void doPost(HttpServletRequest request, HttpServletResponse response)  
 	                    throws ServletException, IOException {    
-			//String email=request.getParameter("email").toString();  
-	       // String password=request.getParameter("password");  
+			  
 			Connection lConn=null;
 			try{
 				lConn=new DBConnection().getConnection();
