@@ -839,7 +839,7 @@ header .logo a {
 	color: transparent;
 	width: 250px;
 	height: 100px;
-	background: url("resource/images/logo7.png") no-repeat center;
+	background: url("../images/logo7.png") no-repeat center;
 	background-size: 100px 100px;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
