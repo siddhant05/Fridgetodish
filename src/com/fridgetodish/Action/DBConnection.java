@@ -89,16 +89,16 @@ public class DBConnection{
     
   // ****setting connection with Cleardb database****
   
-    /*  public static Connection getConnection() throws URISyntaxException, SQLException {
+      public static Connection getConnection() throws URISyntaxException, SQLException {
       
         String username ="b753ba6a0e03b3";
         String password = "ad297d2c";
        // String dbUrl = "jdbc:mysql://" + url.getHost() + url.getPath();
         String dbUrl="jdbc:mysql://us-cdbr-iron-east-05.cleardb.net/heroku_6706d4fbc456e71";
         return DriverManager.getConnection(dbUrl, username, password);
-    }*/
+    }
 
-    public  Connection getConnection() {
+    /*public  Connection getConnection() {
     	
         try {
 			Class.forName(driverName);
@@ -121,7 +121,7 @@ public class DBConnection{
         // System.out.println("Driver not found."); 
      //}
  	return con;
- }
+ }*/
     
     /*public static void main (String [] args){
     	try{
